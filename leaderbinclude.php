@@ -21,7 +21,7 @@ if($conn === false){
   echo "<br>";
 }
 
-$sql1 = "SELECT * FROM persons BY score DESC";  
+$sql1 = "SELECT * FROM persons ORDER BY score DESC";  
 $result = $conn->query($sql1);
 
 echo '<h2 style="text-align: center; color: white;">Leaderboard</h1>';
