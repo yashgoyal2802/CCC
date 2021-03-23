@@ -1,11 +1,12 @@
 <?php
 if(isset($_POST["submit"]))
 {
-    $fn = $_POST["fname"];
-    $ln = $_POST["lname"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $ccname = $_POST["ccname"];
+    $cfname = $_POST["cfname"];
     $email = $_POST["email"];
-    $gender = $_POST["gender"];
-    $score = $_POST["score"];
+}
     
 
 function OpenCon()
@@ -33,6 +34,7 @@ function CloseCon($conn)
 
 $sql = "CREATE TABLE IF NOT EXISTS persons(
     username VARCHAR(30) NOT NULL,
+    password VARCHAR(30) NOT NULL,
     ccname VARCHAR(30) NOT NULL,
     cfname VARCHAR(30) NOT NULL,
     email VARCHAR(70) NOT NULL UNIQUE
@@ -52,7 +54,7 @@ if ($result->num_rows> 0) {
 	echo "Registration already exists for the given Email address.<br>";
 } else{
 
-	$sql2="INSERT INTO persons SET username = '$username', ccname='$ccname', ccname='$cfname', email='$email'";
+	$sql2="INSERT INTO persons SET username = '$username', password = '$password', ccname='$ccname', ccname='$cfname', email='$email'";
 
 
 	if($conn->query($sql2) === true){
