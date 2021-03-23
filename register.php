@@ -10,12 +10,11 @@ if(isset($_POST["submit"]))
 
 function OpenCon()
  {
- 	$dbhost = "localhost";
- 	$dbuser = "root";
- 	$dbpass = "adityadev";
- 	$db = "wp_project";
- 	$conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
- 
+	$dbhost = "sql6.freesqldatabase.com";
+	$dbuser = "sql6400891";
+	$dbpass = "aHtINc8Ff7";
+	$db = "sql6400891";
+	$conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
  	return $conn;
  }
  
