@@ -2,7 +2,7 @@
  
 function OpenCon()
 {
-    $dbhost = "sql6.freesqldatabase.com:3306";
+    $dbhost = "sql6.freesqldatabase.com";
     $dbuser = "sql6400891";
     $dbpass = "aHtINc8Ff7";
     $db = "sql6400891";
