@@ -21,7 +21,7 @@ if($conn === false){
   echo "<br>";
 }
 
-$sql1 = "SELECT * FROM leaderboard ORDER BY Score DESC";  
+$sql1 = "SELECT * FROM leaderboard persons BY Score DESC";  
 $result = $conn->query($sql1);
 
 echo '<h2 style="text-align: center; color: white;">Leaderboard</h1>';
@@ -47,7 +47,7 @@ if ($result) {
     echo '<td style = "font-weight: 500; width: 10px; padding-left:2px;">';
     echo "$ctr</td>";
     echo '<td style = "padding-left: 12rem; font-size: 1.1rem; letter-spacing: 0.05rem; text-align:left">';
-    echo $row["full_name"]."</td>";
+    echo $row["first_name"]."</td>";
     echo '<td style = "font-size: 0.8rem;">';
     echo $row["score"]."</td></tr>";
     $ctr = $ctr + 1;
