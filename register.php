@@ -37,7 +37,8 @@ $sql = "CREATE TABLE IF NOT EXISTS persons(
     password VARCHAR(30) NOT NULL,
     ccname VARCHAR(30) NOT NULL,
     cfname VARCHAR(30) NOT NULL,
-    email VARCHAR(70) NOT NULL UNIQUE
+    email VARCHAR(70) NOT NULL UNIQUE,
+    achievements VARCHAR(100)
 )";
 
 if($conn->query($sql) === true){
