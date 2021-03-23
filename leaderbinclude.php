@@ -44,14 +44,10 @@ echo '<table style="margin-left: auto; margin-right: auto; margin-top: 50px; pos
 
 echo '<tr style="background-color: rgba(255, 255, 255, 0.3);">';
 echo '<th style="padding-left: 2rem;">';
-echo 'Rank';
-echo '</th>';
-echo '<th>';
-echo 'Name';
-echo '</th>';
-echo '<th>';
-echo 'Score';
-echo '</th>';
+echo 'Rank</th>';
+echo '<th>Name</th>';
+echo '<th>Codechef</th>';
+echo '<th>Codeforces</th>';
 echo '</tr>';
 echo '<div style="border: 1px solid rgba(255,255,255,0.3);">';
 
