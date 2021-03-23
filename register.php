@@ -10,12 +10,11 @@ if(isset($_POST["submit"]))
 
 function OpenCon()
  {
- 	$dbhost = "localhost";
- 	$dbuser = "root";
- 	$dbpass = "adityadev";
- 	$db = "wp_project";
- 	$conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
- 
+	$dbhost = "sql6.freesqldatabase.com";
+	$dbuser = "sql6400897";
+	$dbpass = "gcysFbCvd9";
+	$db = "sql6400897";
+	$conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
  	return $conn;
  }
  
@@ -36,7 +35,8 @@ $sql = "CREATE TABLE IF NOT EXISTS persons(
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
     email VARCHAR(70) NOT NULL UNIQUE,
-    gender VARCHAR(30) NOT NULL
+    gender VARCHAR(30) NOT NULL,
+    score INT(5)
 )";
 
 if($conn->query($sql) === true){
@@ -57,10 +57,10 @@ if ($result->num_rows> 0) {
 
 	$sql1="INSERT INTO leaderboard SET full_name='$name', score='$score'";
 
-	$sql2="INSERT INTO persons SET first_name = '$fn', last_name='$ln', email='$email', gender='$gender'";
+	$sql2="INSERT INTO persons SET first_name = '$fn', last_name='$ln', email='$email', gender='$gender', score='$score'";
 
 
-	if($conn->query($sql1) === true and $conn->query($sql2) === true){
+	if($conn->query($sql2) === true){
         header('Location: home.html');
         exit;
 	} else{

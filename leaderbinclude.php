@@ -1,15 +1,14 @@
 <?php
- 
+
 function OpenCon()
-{
-    $dbhost = "localhost";
-    $dbuser = "root";
-    $dbpass = "adityadev";
-    $db = "wp_project";
-    $conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
-    
-    return $conn;
-} 
+ {
+	$dbhost = "sql6.freesqldatabase.com";
+	$dbuser = "sql6400897";
+	$dbpass = "gcysFbCvd9";
+	$db = "sql6400897";
+	$conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
+ 	return $conn;
+ }
  
 function CloseCon($conn)
 {
@@ -22,7 +21,7 @@ if($conn === false){
   echo "<br>";
 }
 
-$sql1 = "SELECT * FROM leaderboard ORDER BY Score DESC";  
+$sql1 = "SELECT * FROM persons ORDER BY score DESC";  
 $result = $conn->query($sql1);
 
 echo '<h2 style="text-align: center; color: white;">Leaderboard</h1>';
@@ -48,7 +47,7 @@ if ($result) {
     echo '<td style = "font-weight: 500; width: 10px; padding-left:2px;">';
     echo "$ctr</td>";
     echo '<td style = "padding-left: 12rem; font-size: 1.1rem; letter-spacing: 0.05rem; text-align:left">';
-    echo $row["full_name"]."</td>";
+    echo $row["first_name"]."</td>";
     echo '<td style = "font-size: 0.8rem;">';
     echo $row["score"]."</td></tr>";
     $ctr = $ctr + 1;
