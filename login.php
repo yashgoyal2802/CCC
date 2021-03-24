@@ -25,4 +25,6 @@ function OpenCon()
     die("ERROR: Could not connect.<br>" . $conn->connect_error);
 }
 
+$sql= "SELECT * FROM persons WHERE username='$username' AND password='$password'";
+$result = $conn->query($sql);
 ?>
