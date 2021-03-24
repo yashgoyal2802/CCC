@@ -1,82 +1,12 @@
-body {
-    background-color: #f0f2f5;
-    margin-top: 8%;
-    margin-left: 22%;
-    position: relative;
-    display: block;
+.mynav {
+  background: rgb(17, 17, 17);
+  color: rgb(255,255,255);
+  font-size: 16px;
 }
 
-img {
-    border-radius: 20px;
-    height: 100px;
-    width: 100px;
+.mylink {
+  background: rgb(17, 17, 17);
+  color: rgba(254,254,254,0.9)!important;
 }
 
-.img-text {
-    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
-    font-size: 28px;
-    font-weight: normal;
-    line-height: 32px;
-    width: 500px;
-}
 
-form {
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
-    color: #1c1e21;
-}
-
-.block1 {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.block2 {
-    height: 456px;
-    width: 396px;
-}
-
-.block3 {
-    padding-bottom: 24px;
-    padding-top: 10px;
-    text-align: center;
-    align-items: center;
-    background-color: #fff;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-    box-sizing: border-box;
-    margin: 40px 0 0;
-    padding: 20px 0 28px;
-    width: 396px;
-}
-
-.block4 {
-    box-sizing: border-box;
-    margin-right: 0;
-    padding-right: 32px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.text1 {
-    font-size: 17px;
-    width: 364px;
-    margin: auto;
-    padding: 6px 0;
-    display: inline-block;
-    border-radius: 10px;
-}
-
-.button1 {
-    background-color: #1877f2;
-    border: none;
-    border-radius: 6px;
-    font-size: 20px;
-    line-height: 48px;
-    padding: 0 16px;
-    width: 332px;
-    color: white;
-}

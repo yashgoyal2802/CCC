@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Navigation-Clean.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         .content {
             text-align: center;
@@ -159,30 +161,25 @@
 
 <body>
     <header>
-        <header class="text-gray-400 bg-gray-900 body-font">
-            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-              <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-                <a class="mr-5 hover:text-white">Home</a>
-                <a class="mr-5 hover:text-white">Calender</a>
-                <a class="mr-5 hover:text-white">LeaderBoard</a>
-                <a class="hover:text-white">Resources</a>
-                <a class="hover:text-white">My Profile</a>
-              </nav>
-              <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
-                <span class="ml-3 text-xl xl:block lg:hidden">CCC</span>
-              </a>
-              <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-                <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean mynav">
+            <img src="images/ccc.png" alt="logo" width="5%">
+            <div class="container"><a class="navbar-brand" href="#">Competitive Coding Club</a>
+                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-              </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link mylink" href="#">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link mylink" href="contests.html">Calendar</a></li>
+                        <li class="nav-item"><a class="nav-link mylink" href="leaderbinclude.php">Leader Board</a></li>
+                        <li class="nav-item"><a class="nav-link mylink" href="#">Achievements</a></li>
+                        <li class="nav-item"><a class="nav-link mylink" href="#">My profile</a></li>
+                        <li class="nav-item"><a class="nav-link mylink" href="#">Logout</a></li>
+                    </ul>
+                </div>
             </div>
-          </header>
+        </nav>
 
 
         <!-- <ul>
