@@ -21,8 +21,8 @@ if($conn === false){
   echo "<br>";
 }
 
-function getRating(platform, user){
-	$url = 'https://competitive-coding-api.herokuapp.com/api/'.platform.'/'.user;
+function getRating($platform, $user){
+	$url = 'https://competitive-coding-api.herokuapp.com/api/'.$platform.'/'.$user;
 	$ch = curl_init($url);
 	curl_setopt($ch, CURLOPT_HTTPGET, true);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
