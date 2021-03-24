@@ -444,16 +444,26 @@
             <div class="form sign-in">
               <div class="input-group">
                 <i class="bx bxs-user"></i>
-                <input type="text" placeholder="Username" />
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Username"
+                />
               </div>
               <div class="input-group">
                 <i class="bx bxs-lock-alt"></i>
-                <input type="password" placeholder="Password" />
+                <input
+                  type="password"
+                  id="password"
+                  class="password"
+                  placeholder="Password"
+                />
               </div>
               <!-- <button>Sign in</button> -->
               <input
                 type="submit"
-                name="submit"
+                name="login"
                 class="button1"
                 value="Sign In"
                 onclick=" return validateLogin()"
