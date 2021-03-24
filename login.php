@@ -16,5 +16,13 @@ function OpenCon()
 	$conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
  	return $conn;
  }
+ function CloseCon($conn)
+ {
+ 	$conn -> close();
+ }
+ $conn = OpenCon();
+ if($conn === false){
+    die("ERROR: Could not connect.<br>" . $conn->connect_error);
+}
 
 ?>
