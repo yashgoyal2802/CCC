@@ -118,7 +118,7 @@ echo '<script>
             return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
           };
           break;
-        case "string'":
+        case "string":
           return;
       }
 
