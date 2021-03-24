@@ -29,7 +29,9 @@ $sql= "SELECT * FROM persons WHERE username='$username' AND password='$password'
 $result = $conn->query($sql);
 
 if($result->num_rows==1){
-// session creation ig
+	session_start();
+	$_SESSION["username"] = $username;
+	header('Location: home.html');
 }else{
     $error = "Your Login Name or Password is invalid";
 }
