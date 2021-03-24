@@ -132,6 +132,7 @@ function sortTable(n) {
     }
   }
 }
+sortTable(1);
 </script>';
 
 CloseCon($conn);
