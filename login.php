@@ -29,7 +29,7 @@ function OpenCon()
 $sql= "SELECT * FROM persons WHERE username='$username' AND password='$password'";
 $result = $conn->query($sql);
 
-if($result->num_rows==1){
+if($result->num_rows>0){
 	$_SESSION["username"] = $username;
 	header('Location: home.html');
 }else{
