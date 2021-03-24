@@ -40,8 +40,8 @@ echo '<style>
 echo '<table id="leader"; style="margin-left: auto; margin-right: auto; margin-top: 50px; position: relative; width: calc(90vw - 2rem); max-width: 800px; border-spacing: 0 1rem; border: 1px solid rgba(255,255,255,0.3); color: white; border-collapse: collapse;">';
 echo '<tr style="background-color: rgba(255, 255, 255, 0.3);">';
 echo '<th>Name</th>';
-echo '<th class="score" onclick="sortTable(0)">Codechef</th>';
-echo '<th class="score" onclick="sortTable(1)">Codeforces</th>';
+echo '<th class="score" onclick="sortTable(1)">Codechef</th>';
+echo '<th class="score" onclick="sortTable(2)">Codeforces</th>';
 echo '</tr>';
 echo '<div style="border: 1px solid rgba(255,255,255,0.3);">';
 $ctr = 1;
