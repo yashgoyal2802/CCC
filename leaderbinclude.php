@@ -53,7 +53,7 @@ if ($result) {
     echo '<tr style= "border: 1px solid rgba(255,255,255,0.3); height: 2rem;">';
     echo '<td style = "font-weight: 500; width: 10px; padding-left:2px;">';
     echo "$ctr</td>";
-    echo '<td style = "padding-left: 12rem; font-size: 1.1rem; letter-spacing: 0.05rem; text-align:left">';
+    echo '<td style = "padding-left: 8rem; font-size: 1.1rem; letter-spacing: 0.05rem; text-align:left">';
     echo $row["username"]."</td>";
     echo '<td style = "font-size: 0.8rem;">';
     echo getRating('codechef', $row['ccname'])."</td>";
