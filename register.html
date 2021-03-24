@@ -549,7 +549,14 @@
       signIn.addEventListener("click", toggle);
       signUp.addEventListener("click", toggle);
 
-      function validateLogin() {}
+      function validateLogin() {
+        var uname = document.getElementById("username").value;
+        if (uname == null || uname == "") {
+          alert("Error: Username cannot be blank");
+          return false;
+        }
+        return true;
+      }
 
       function validateForm() {
         var uname = document.getElementById("username").value;
