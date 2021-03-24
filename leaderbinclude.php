@@ -34,7 +34,7 @@ function getRating($platform, $user){
 
 
 
-$sql1 = "SELECT * FROM persons ORDER BY score DESC";  
+$sql1 = "SELECT * FROM persons";  
 $result = $conn->query($sql1);
 
 
