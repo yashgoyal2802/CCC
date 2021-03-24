@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 if(isset($_POST["login"]))
 {
     $username = $_POST["username"];
@@ -30,7 +30,9 @@ $sql= "SELECT * FROM persons WHERE username='$username' AND password='$password'
 $result = $conn->query($sql);
 
 if($result->num_rows>0){
-	$_SESSION["username"] = $username;
+	$cookie_name = "username"; 
+	$cookie_value = $username;
+	setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
 	header('Location: home.html');
 }else{
     $error = "Your Login Name or Password is invalid";
