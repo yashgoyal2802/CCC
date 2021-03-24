@@ -41,7 +41,7 @@ $result = $conn->query($sql1);
 
 echo '<h2 style="text-align: center; color: white;">Leaderboard</h1>';
 echo '<style>
-.score th {
+.score {
   cursor: pointer;
 }
 </style>';
@@ -56,7 +56,7 @@ echo '</tr>';
 echo '<div style="border: 1px solid rgba(255,255,255,0.3);">';
 
 
-$ctr = 1
+$ctr = 1;
 if ($result) {
   while($row = $result->fetch_assoc()) {
     echo '<tr style= "border: 1px solid rgba(255,255,255,0.3); height: 2rem;">';
