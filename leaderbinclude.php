@@ -83,9 +83,10 @@ echo '<th id="rank" style="padding-left: 2rem;">';
 echo 'Rank</th>';
 echo '<div style="border: 1px solid rgba(255,255,255,0.3);">';
 $ctr1=0
-$while($ctr1!=$ctr){
+while($ctr1!=$ctr){
     echo '<tr><td class="rank" style = "font-weight: 500; width: 10px; padding-left:2px;">';
     echo "$ctr</td></tr>";
+    $ctr1+=1;
 }
 echo '</div>';
 echo '</table>';
