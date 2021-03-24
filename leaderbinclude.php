@@ -74,7 +74,7 @@ echo '</div>';
 echo '</table>';
 echo "<br><br><br>";
 
-echo '
+echo '<script>
 function sortTable() {
   var table, rows, switching, i, x, y, shouldSwitch;
   table = document.getElementById("leader");
@@ -109,7 +109,7 @@ function sortTable() {
     }
   }
 }
-';
+</script>';
 
 CloseCon($conn);
 ?>
