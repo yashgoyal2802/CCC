@@ -78,14 +78,14 @@ else
 echo '</div>';
 echo '</table>';
 
-echo '<table id="rank"; style="margin-left: auto; margin-right: auto; margin-top: 50px; position: relative; width: calc(90vw - 2rem); max-width: 800px; border-spacing: 0 1rem; border: 1px solid rgba(255,255,255,0.3); color: white; border-collapse: collapse;">';
+echo '<table id="rank"; style="margin-left: auto; margin-right: auto; margin-top: 50px; position: absolute; max-width: 800px; border-spacing: 0 1rem; border: 1px solid rgba(255,255,255,0.3); color: white; border-collapse: collapse;">';
 echo '<th id="rank" style="padding-left: 2rem;">';
 echo 'Rank</th>';
 echo '<div style="border: 1px solid rgba(255,255,255,0.3);">';
-$ctr1=0;
+$ctr1=1;
 while($ctr1!=$ctr){
     echo '<tr><td class="rank" style = "font-weight: 500; width: 10px; padding-left:2px;">';
-    echo "$ctr</td></tr>";
+    echo "$ctr1</td></tr>";
     $ctr1+=1;
 }
 echo '</div>';
