@@ -1,11 +1,12 @@
 <?php
 if(isset($_POST["submit"]))
 {
-    $fn = $_POST["fname"];
-    $ln = $_POST["lname"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $ccname = $_POST["ccname"];
+    $cfname = $_POST["cfname"];
     $email = $_POST["email"];
-    $gender = $_POST["gender"];
-    $score = $_POST["score"];
+}
     
 
 function OpenCon()
@@ -32,11 +33,12 @@ function CloseCon($conn)
 
 
 $sql = "CREATE TABLE IF NOT EXISTS persons(
-    first_name VARCHAR(30) NOT NULL,
-    last_name VARCHAR(30) NOT NULL,
+    username VARCHAR(30) NOT NULL,
+    password VARCHAR(30) NOT NULL,
+    ccname VARCHAR(30) NOT NULL,
+    cfname VARCHAR(30) NOT NULL,
     email VARCHAR(70) NOT NULL UNIQUE,
-    gender VARCHAR(30) NOT NULL,
-    score INT(5)
+    achievements VARCHAR(100)
 )";
 
 if($conn->query($sql) === true){
@@ -53,18 +55,13 @@ if ($result->num_rows> 0) {
 	echo "Registration already exists for the given Email address.<br>";
 } else{
 
-    $name = $fn.' '.$ln;
-
-	$sql1="INSERT INTO leaderboard SET full_name='$name', score='$score'";
-
-	$sql2="INSERT INTO persons SET first_name = '$fn', last_name='$ln', email='$email', gender='$gender', score='$score'";
+	$sql2="INSERT INTO persons SET username = '$username', password = '$password', ccname='$ccname', ccname='$cfname', email='$email'";
 
 
 	if($conn->query($sql2) === true){
         header('Location: home.html');
         exit;
-	} else{
-	    echo "ERROR: Could not able to execute $sql1.<br>" . $conn->error;
+	}
     }
 }
 
