@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Navigation-Clean.css">
+    <link rel="stylesheet" href="styles.css">    
     <style>
 
         .content {
@@ -125,14 +128,25 @@
 <body>
     <div id="page-container">
     <header>
-        <ul>
-            <li style="float:left"><a href="home.html" target="_blank"><img src="images/ccc.png" alt="CCC"
-                        width="20px" height="20px"></a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="contests.html">Contests</a></li>
-            <li><a href="http://localhost/WPProject/leaderboard.php">Leaderboard</a></li>
-            <li><a href="home.html">Home</a></li>
-        </ul>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean mynav">
+            <img src="images/ccc.png" alt="logo" width="5%">
+            <div class="container"><a class="navbar-brand" href="#">Competitive Coding Club</a>
+                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link mylink" href="#">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link mylink" href="contests.html">Calendar</a></li>
+                        <li class="nav-item"><a class="nav-link mylink" href="leaderboard.php">Leader Board</a></li>
+                        <li class="nav-item"><a class="nav-link mylink" href="#">Achievements</a></li>
+                        <li class="nav-item"><a class="nav-link mylink" href="#">My profile</a></li>
+                        <li class="nav-item"><a class="nav-link mylink" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <div id="board">
     <p></p>
