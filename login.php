@@ -34,6 +34,7 @@ if($result->num_rows==1){
 	header('Location: home.html');
 }else{
     $error = "Your Login Name or Password is invalid";
+    echo "$error";
 }
 
 ?>
