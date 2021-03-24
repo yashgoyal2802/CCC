@@ -1,4 +1,5 @@
-<?php 
+<?php
+session_start();
 if(isset($_POST["login"]))
 {
     $username = $_POST["username"];
@@ -29,7 +30,6 @@ $sql= "SELECT * FROM persons WHERE username='$username' AND password='$password'
 $result = $conn->query($sql);
 
 if($result->num_rows==1){
-	session_start();
 	$_SESSION["username"] = $username;
 	header('Location: home.html');
 }else{
