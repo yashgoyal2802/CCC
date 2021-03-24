@@ -41,7 +41,7 @@ $result = $conn->query($sql1);
 
 echo '<h2 style="text-align: center; color: white;">Leaderboard</h1>';
 echo '<style>
-th {
+.score th {
   cursor: pointer;
 }
 </style>';
@@ -49,20 +49,17 @@ th {
 echo '<table id="leader"; style="margin-left: auto; margin-right: auto; margin-top: 50px; position: relative; width: calc(90vw - 2rem); max-width: 800px; border-spacing: 0 1rem; border: 1px solid rgba(255,255,255,0.3); color: white; border-collapse: collapse;">';
 
 echo '<tr style="background-color: rgba(255, 255, 255, 0.3);">';
-echo '<th style="padding-left: 2rem;">';
-echo 'Rank</th>';
 echo '<th>Name</th>';
-echo '<th onclick="sortTable(0)">Codechef</th>';
-echo '<th onclick="sortTable(1)">Codeforces</th>';
+echo '<th class="score" onclick="sortTable(0)">Codechef</th>';
+echo '<th class="score" onclick="sortTable(1)">Codeforces</th>';
 echo '</tr>';
 echo '<div style="border: 1px solid rgba(255,255,255,0.3);">';
 
+
+$ctr = 1
 if ($result) {
-  $ctr = 1;
   while($row = $result->fetch_assoc()) {
     echo '<tr style= "border: 1px solid rgba(255,255,255,0.3); height: 2rem;">';
-    echo '<td style = "font-weight: 500; width: 10px; padding-left:2px;">';
-    echo "$ctr</td>";
     echo '<td style = "padding-left: 12rem; font-size: 1.1rem; letter-spacing: 0.05rem; text-align:left">';
     echo $row["username"]."</td>";
     echo '<td style = "font-size: 0.8rem;">';
@@ -76,6 +73,20 @@ else
   echo"No Data Available";
 
 
+
+
+echo '</div>';
+echo '</table>';
+
+echo '<table id="rank"; style="margin-left: auto; margin-right: auto; margin-top: 50px; position: relative; width: calc(90vw - 2rem); max-width: 800px; border-spacing: 0 1rem; border: 1px solid rgba(255,255,255,0.3); color: white; border-collapse: collapse;">';
+echo '<th id="rank" style="padding-left: 2rem;">';
+echo 'Rank</th>';
+echo '<div style="border: 1px solid rgba(255,255,255,0.3);">';
+$ctr1=0
+$while($ctr1!=$ctr){
+    echo '<tr><td class="rank" style = "font-weight: 500; width: 10px; padding-left:2px;">';
+    echo "$ctr</td></tr>";
+}
 echo '</div>';
 echo '</table>';
 echo "<br><br><br>";
