@@ -7,6 +7,14 @@ if(isset($_POST["login"]))
     // $cfname = $_POST["cfname"];
     // $email = $_POST["email"];
 }
-
+function OpenCon()
+ {
+	$dbhost = "sql6.freesqldatabase.com";
+	$dbuser = "sql6400897";
+	$dbpass = "gcysFbCvd9";
+	$db = "sql6400897";
+	$conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
+ 	return $conn;
+ }
 
 ?>
