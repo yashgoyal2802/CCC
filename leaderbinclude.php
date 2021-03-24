@@ -94,7 +94,7 @@ echo "<br><br><br>";
 
 echo '<script>
     leader.onclick = function(e) {
-      if (e.target.tagName != 'TH') return;
+      if (e.target.tagName != "TH") return;
 
       let th = e.target;
       // if TH, then sort
@@ -105,7 +105,7 @@ echo '<script>
     };
 
     function sortGrid(colNum, type) {
-      let tbody = grid.querySelector('tbody');
+      let tbody = grid.querySelector("tbody");
 
       let rowsArray = Array.from(tbody.rows);
 
@@ -113,16 +113,13 @@ echo '<script>
       let compare;
 
       switch (type) {
-        case 'number':
+        case "number":
           compare = function(rowA, rowB) {
             return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
           };
           break;
-        case 'string':
-          compare = function(rowA, rowB) {
-            return rowA.cells[colNum].innerHTML > rowB.cells[colNum].innerHTML ? 1 : -1;
-          };
-          break;
+        case "string'":
+          return;
       }
 
       // sort
