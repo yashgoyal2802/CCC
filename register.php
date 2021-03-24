@@ -6,7 +6,6 @@ if(isset($_POST["submit"]))
     $ccname = $_POST["ccname"];
     $cfname = $_POST["cfname"];
     $email = $_POST["email"];
-    /*echo $username, $password, $ccname, $cfname, $email;*/
 }
 
 function OpenCon()
@@ -28,7 +27,6 @@ function CloseCon($conn)
     die("ERROR: Could not connect.<br>" . $conn->connect_error);
 }
 
-echo "checking if table already exists";
 $sql = "CREATE TABLE IF NOT EXISTS persons(
     username VARCHAR(30) NOT NULL,
     password VARCHAR(30) NOT NULL,
