@@ -7,7 +7,6 @@ if(isset($_POST["submit"]))
     $cfname = $_POST["cfname"];
     $email = $_POST["email"];
 }
-    
 
 function OpenCon()
  {
@@ -19,13 +18,10 @@ function OpenCon()
  	return $conn;
  }
  
-
 function CloseCon($conn)
  {
  	$conn -> close();
  }
- 
-
  $conn = OpenCon();
  if($conn === false){
     die("ERROR: Could not connect.<br>" . $conn->connect_error);
