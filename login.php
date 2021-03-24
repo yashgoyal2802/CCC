@@ -25,4 +25,13 @@ function OpenCon()
     die("ERROR: Could not connect.<br>" . $conn->connect_error);
 }
 
+$sql= "SELECT * FROM persons WHERE username='$username' AND password='$password'";
+$result = $conn->query($sql);
+
+if($result->num_rows==1){
+// session creation ig
+}else{
+    $error = "Your Login Name or Password is invalid";
+}
+
 ?>
