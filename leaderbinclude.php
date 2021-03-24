@@ -1,5 +1,4 @@
 <?php
-
 function OpenCon()
  {
 	$dbhost = "sql6.freesqldatabase.com";
@@ -20,7 +19,6 @@ if($conn === false){
   die("ERROR: Could not connect." . $conn->connect_error);
   echo "<br>";
 }
-
 function getRating($platform, $user){
 	$url = 'https://competitive-coding-api.herokuapp.com/api/'.$platform.'/'.$user;
 	$ch = curl_init($url);
@@ -31,31 +29,21 @@ function getRating($platform, $user){
 	$response=json_decode($response_json, true);
 	return $response['rating'];
 }
-
-
-
 $sql1 = "SELECT * FROM persons";  
 $result = $conn->query($sql1);
-
-
-
 echo '<h2 style="text-align: center; color: white;">Leaderboard</h1>';
 echo '<style>
 .score {
   cursor: pointer;
 }
 </style>';
-
 echo '<table id="leader"; style="margin-left: auto; margin-right: auto; margin-top: 50px; position: relative; width: calc(90vw - 2rem); max-width: 800px; border-spacing: 0 1rem; border: 1px solid rgba(255,255,255,0.3); color: white; border-collapse: collapse;">';
-
 echo '<tr style="background-color: rgba(255, 255, 255, 0.3);">';
-echo '<th data-type="string">Name</th>';
-echo '<th class="score" data-type="number">Codechef</th>';
-echo '<th class="score" data-type="number">Codeforces</th>';
+echo '<th>Name</th>';
+echo '<th class="score" onclick="sortTable(0)">Codechef</th>';
+echo '<th class="score" onclick="sortTable(1)">Codeforces</th>';
 echo '</tr>';
 echo '<div style="border: 1px solid rgba(255,255,255,0.3);">';
-
-
 $ctr = 1;
 if ($result) {
   while($row = $result->fetch_assoc()) {
@@ -71,10 +59,6 @@ if ($result) {
 }
 else
   echo"No Data Available";
-
-
-
-
 echo '</div>';
 echo '</table>';
 
@@ -82,6 +66,7 @@ echo '<table id="rank"; style="margin-left: auto; margin-right: auto; margin-top
 echo '<th id="rank" style="padding-left: 2rem;">';
 echo 'Rank</th>';
 echo '<div style="border: 1px solid rgba(255,255,255,0.3);">';
+
 $ctr1=1;
 while($ctr1!=$ctr){
     echo '<tr><td class="rank" style = "font-weight: 500; width: 10px; padding-left:2px;">';
@@ -93,41 +78,61 @@ echo '</table>';
 echo "<br><br><br>";
 
 echo '<script>
-    leader.onclick = function(e) {
-      if (e.target.tagName != "TH") return;
-
-      let th = e.target;
-      // if TH, then sort
-      // cellIndex is the number of th:
-      //   0 for the first column
-      //   1 for the second column, etc
-      sortGrid(th.cellIndex, th.dataset.type);
-    };
-
-    function sortGrid(colNum, type) {
-      let tbody = grid.querySelector("tbody");
-
-      let rowsArray = Array.from(tbody.rows);
-
-      // compare(a, b) compares two rows, need for sorting
-      let compare;
-
-      switch (type) {
-        case "number":
-          compare = function(rowA, rowB) {
-            return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
-          };
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("leader");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "desc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
           break;
-        case "string":
-          return;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
       }
-
-      // sort
-      rowsArray.sort(compare);
-
-      tbody.append(...rowsArray);
     }
-  </script>';
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>';
 
 CloseCon($conn);
 ?>
