@@ -1,4 +1,38 @@
 <?php
+$user = $_COOKIE['username'];
+
+function OpenCon()
+{
+	$dbhost = "sql6.freesqldatabase.com";
+	$dbuser = "sql6400897";
+	$dbpass = "gcysFbCvd9";
+	$db = "sql6400897";
+	$conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
+ 	return $conn;
+}
+
+function CloseCon($conn)
+{
+    $conn -> close();
+} 
+
+$conn = OpenCon();
+if($conn === false){
+  die("ERROR: Could not connect." . $conn->connect_error);
+  echo "<br>";
+}
+
+$sql = "SELECT * FROM persons WHERE username='$user'";
+$result = $conn -> query($sql);
+
+if($result){
+  
+  $email = $result['email'];
+  $ccname = $result['ccname'];
+  $cfname = $result['cfname'];
+  $ach = $result['achievements'];
+  $pwd = $result['password'];
+}
 echo '<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +87,7 @@ echo '<!DOCTYPE html>
                               <div class="col">
                                 <div class="form-group">
                                   <label>Username</label>
-                                  <input class="form-control" type="text" name="usernname" value="<?php echo htmlspecialchars($user); ?>" readonly>
+                                  <input class="form-control" type="text" name="usernname" value=$user readonly>
                                 </div>
                               </div>
                             </div>
@@ -61,7 +95,7 @@ echo '<!DOCTYPE html>
                               <div class="col">
                                 <div class="form-group">
                                   <label>Email</label>
-                                  <input class="form-control" type="email" name="email" value="<?php echo htmlspecialchars($email); ?>">
+                                  <input class="form-control" type="email" name="email" value=$email>
                                 </div>
                               </div>
                             </div>
@@ -69,7 +103,7 @@ echo '<!DOCTYPE html>
                               <div class="col">
                                 <div class="form-group">
                                   <label>Codechef Username</label>
-                                  <input class="form-control" type="text" name="ccname" value="<?php echo htmlspecialchars($ccname); ?>">
+                                  <input class="form-control" type="text" name="ccname" value=$ccname>
                                 </div>
                               </div>
                             </div>
@@ -77,7 +111,7 @@ echo '<!DOCTYPE html>
                               <div class="col">
                                 <div class="form-group">
                                   <label>Codeforces Username</label>
-                                  <input class="form-control" type="text" name="cfname" value="<?php echo htmlspecialchars($cfname); ?>">
+                                  <input class="form-control" type="text" name="cfname" value=$cfname>
                                 </div>
                               </div>
                             </div>
@@ -85,7 +119,7 @@ echo '<!DOCTYPE html>
                               <div class="col mb-3">
                                 <div class="form-group">
                                   <label>Achievements</label>
-                                  <textarea class="form-control" rows="5" name="ach" value="<?php echo htmlspecialchars($ach); ?>"></textarea>
+                                  <textarea class="form-control" rows="5" name="ach" value=$ach></textarea>
                                 </div>
                               </div>
                             </div>
@@ -98,7 +132,7 @@ echo '<!DOCTYPE html>
                               <div class="col">
                                 <div class="form-group">
                                   <label>Current Password</label>
-                                  <input class="form-control" type="password" name="cpwd" value="<?php echo htmlspecialchars($pwd); ?>">
+                                  <input class="form-control" type="password" name="cpwd" value=$pwd>
                                 </div>
                               </div>
                             </div>
@@ -106,7 +140,7 @@ echo '<!DOCTYPE html>
                               <div class="col">
                                 <div class="form-group">
                                   <label>New Password</label>
-                                  <input class="form-control" type="password" name="npwd" value="<?php echo htmlspecialchars($pwd); ?>">
+                                  <input class="form-control" type="password" name="npwd" value=$pwd>
                                 </div>
                               </div>
                             </div>
