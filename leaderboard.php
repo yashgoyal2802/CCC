@@ -19,82 +19,16 @@
             overflow-x: hidden;
         }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #262626;
-            font-size: 20px;
-            display: block;
-        }
-
-        li a {
-            float: right;
-            color: white;
-            text-align: center;
-            padding: 12px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover {
-            background-color: #111;
-        }
-
-        header {
-            text-align: center;
-            /* background-color: #F7F7FF; */
-            /* background-color: #F0EFEB; */
-            background-color: #F4F1DE;
-            /* background-image: linear-gradient(blue, pink); */
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
             background: linear-gradient(#25c481, #25b7c4);
             margin: 0;
             width: 100%;
             padding: 0;
             background-repeat: no-repeat;
-
         }
 
         img {
             border-radius:20px;
-        }
-
-        .bg-image {
-            background-image: url("images/ccc_title.jpg");
-            background-color: #F4F1DE;
-            position: relative;
-            margin: 0 auto;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 60%;
-            height: 500px;
-        }
-
-        .bg-text {
-            text-align: center;
-            position: absolute;
-            bottom: 0px;
-            left: 310px;
-            /* right: 20px;  */
-            color: #D0CEBA;
-        }
-
-        @keyframes rotation {
-            from {
-                transform: rotate(0deg)
-            }
-            to {
-                transform: rotate(360deg)
-            }
-        }
-        .rotate {
-            animation: rotation 8s infinite linear;
         }
 
         #page-container {
@@ -102,26 +36,6 @@
           min-height: 100vh;
         }
 
-        footer {
-            text-align: left;
-            padding: 3px;
-            /* background-color: #262626; */
-            background-color: #111;
-            color: white;
-            font-size: 15px;
-            border-width: thin;
-            border-style: solid;
-            border-color: #262626;
-            border-right-style: hidden;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer a {
-            text-decoration: none;
-            color: #5E7CE2;
-        }
     </style>
     <title>Competitive Coding Club</title>
 </head>
@@ -130,8 +44,8 @@
     <header>
     <?php include('navbar.php')?>
     </header>
-    <div id="board">
-    <p></p>
+    <div>
+    <br>
     <?php include('leaderbinclude.php')?>
     </div>
     <?php include('footer.php')?>
