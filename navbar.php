@@ -16,7 +16,7 @@
   <nav class="navbar navbar-light navbar-expand-md navigation-clean mynav">
           <img src="images/ccc.png" alt="logo" width="5%" />
           <div class="container">
-            <a class="navbar-brand" href="#">Competitive Coding Club</a>
+            <a class="navbar-brand" href="home.php">Competitive Coding Club</a>
             <button
               data-toggle="collapse"
               class="navbar-toggler"
