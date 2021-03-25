@@ -7,6 +7,8 @@
   .mylink {
     background: rgb(17, 17, 17);
     color: rgba(254,254,254,0.9)!important;
+    max-width: 6ch;
+    overflow: hidden;
   }
 
 .content {
