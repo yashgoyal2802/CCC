@@ -2,6 +2,6 @@
 if(isset($_COOKIE['username']))
 {
     unset($_COOKIE['username']);
-    header('Location: home.html');
+    header('Location: index.php');
 }
 ?>
