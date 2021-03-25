@@ -197,5 +197,4 @@ echo '<!DOCTYPE html>
 </body>
 </html>
 ';
-CloseCon($conn);
 ?>
