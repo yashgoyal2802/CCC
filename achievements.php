@@ -53,7 +53,7 @@
         }
 
         body {
-            background: linear-gradient(#25c481, #25b7c4);
+            background-image: radial-gradient(circle, #292929, #2a2a2a, #2b2b2b, #2d2d2d, #2e2e2e, #2f2f2f, #303030, #313131, #323232, #323232, #333333, #343434);
             margin: 0;
             width: 100%;
             padding: 0;
