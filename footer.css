@@ -7,8 +7,14 @@
   .mylink {
     background: rgb(17, 17, 17);
     color: rgba(254,254,254,0.9)!important;
+  }
+  #prof{
     max-width: 6ch;
     overflow: hidden;
+  }
+  #prof:hover{
+    font-size: 8;
+    max-width:10ch;
   }
 
 .content {
