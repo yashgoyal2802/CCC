@@ -24,16 +24,16 @@ if($conn === false){
   echo "<br>";
 }
 
-$sql = "SELECT * FROM persons WHERE username='$user';
+$sql = "SELECT * FROM persons WHERE username='$user'";
 $result = $conn -> query($sql);
 
 if($result){
   
-  $email = $result["email"];
-  $ccname = $result["ccname"];
-  $cfname = $result["cfname"];
-  $ach = $result["achievements"];
-  $pwd = $result["password"];
+  $email = $result['email'];
+  $ccname = $result['ccname'];
+  $cfname = $result['cfname'];
+  $ach = $result['achievements'];
+  $pwd = $result['password'];
 }
 ?>
 
