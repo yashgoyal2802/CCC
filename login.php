@@ -2,8 +2,8 @@
 
 if(isset($_POST["login"]))
 {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+    $username = $_POST["username1"];
+    $password = $_POST["password1"];
     // $ccname = $_POST["ccname"];
     // $cfname = $_POST["cfname"];
     // $email = $_POST["email"];
