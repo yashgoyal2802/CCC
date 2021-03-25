@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navcol-1">
               <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link mylink" href="#">Resources</a>
+                  <a class="nav-link mylink" href="resources.php">Resources</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link mylink" href="contests.html">Calendar</a>
