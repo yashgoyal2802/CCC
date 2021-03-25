@@ -94,14 +94,19 @@
     border-radius: 15px;
     height: 500px;
     width: 1044px;
+    opacity: 0.9;
   }
 
   .bg-text {
-    text-align: center;
+    
     position: absolute;
-    bottom: 0px;
-    left: 310px;
-    color: #d0ceba;
+    bottom: 217px;
+    left: 235px;
+    color: #fff;
+    font-size: 60px;
+    opacity: 1;
+    font-weight: bold;
+    text-shadow: 0 0 25px #000;
   }
 
   aside {
