@@ -24,8 +24,8 @@ if($conn === false){
 
 $sql = "SELECT * FROM persons WHERE username='$user'";
 $result1 = $conn -> query($sql);
-$result = $result1->fetch_assoc()
-if($result1){
+$result = $result1->fetch_assoc();
+if($result){
   
   $email = $result['email'];
   $ccname = $result['ccname'];
