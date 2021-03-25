@@ -44,7 +44,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mylink" href="'.$putprof.'">'.$usern.'</a>
+                  <a class="nav-link mylink" id="prof" href="'.$putprof.'">'.$usern.'</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link mylink"'.$putnav.'</a>
