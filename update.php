@@ -34,4 +34,5 @@ if(isset($_POST["submit"]))
     CloseCon($conn);
     header('Location: home.php');
 }
+header('Location: home.php');
 ?>
