@@ -446,8 +446,8 @@
                 <i class="bx bxs-user"></i>
                 <input
                   type="text"
-                  id="username"
-                  name="username"
+                  id="username1"
+                  name="username1"
                   placeholder="Username"
                 />
               </div>
@@ -455,8 +455,8 @@
                 <i class="bx bxs-lock-alt"></i>
                 <input
                   type="password"
-                  id="password"
-                  name="password"
+                  id="password1"
+                  name="password1"
                   placeholder="Password"
                 />
               </div>
@@ -550,9 +550,14 @@
       signUp.addEventListener("click", toggle);
 
       function validateLogin() {
-        var uname = document.getElementById("username").value;
+        var uname = document.getElementById("username1").value;
+        var pw1 = document.getElementById("password1").value;
         if (uname == null || uname == "") {
           alert("Error: Username cannot be blank");
+          return false;
+        }
+        else if(pw1 == null || pw1 == ""){
+          alert("Error: Password cannot be blank");
           return false;
         }
         return true;
@@ -563,11 +568,15 @@
         var ccname = document.getElementById("ccname").value;
         var cfname = document.getElementById("cfname").value;
         var email = document.getElementById("email").value;
+        var pw = document.getElementById("password").value;
 
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
         if (uname == null || uname == "") {
           alert("Error: Username cannot be blank");
+          return false;
+        else if( pw == null || pw == ""){
+          alert("Error: Password cannot be blank");
           return false;
         } else if (ccname == null || ccname == "") {
           alert("Error: Please enter Codechef username");
