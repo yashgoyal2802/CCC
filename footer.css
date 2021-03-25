@@ -74,7 +74,7 @@
   }
 
   body {
-    background-image: linear-gradient(blue, pink);
+    /* background-image: linear-gradient(blue, pink); */
     margin: 0;
     width: 100%;
     padding: 0;
@@ -114,6 +114,7 @@
     margin-top: 4%;
     padding: 3%;
     background-size: 100%;
+    text-align: center;
   }
 
   section {
@@ -128,6 +129,7 @@
     background-size: 100%;
     letter-spacing: inherit;
     word-spacing: inherit;
+    margin-left: 120px;
   }
 
   section a {
@@ -137,7 +139,7 @@
 
   aside a {
     text-decoration: none;
-    color: #fe654f;
+    color: #bbb7b7
   }
 
   footer {
