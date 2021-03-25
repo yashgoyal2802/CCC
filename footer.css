@@ -88,11 +88,12 @@
     background-image: url("images/home.jpg");
     background-color: white;
     position: relative;
-    margin: 0 auto;
+    margin: 40px auto 0px auto;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 60%;
+    border-radius: 15px;
     height: 500px;
+    width: 1044px;
   }
 
   .bg-text {
