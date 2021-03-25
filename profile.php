@@ -1,4 +1,4 @@
-<?php include('fetch.php')?>
+<!-- <?php include('fetch.php')?> -->
 
 <!DOCTYPE html>
 <html lang="en">
