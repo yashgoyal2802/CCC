@@ -7,7 +7,7 @@
     $putprof='profile.html';
   }
   else{
-    $usern = "My Profile";
+    $usern = "Profile";
     $putnav='href="register.html">Login';
     $putprof= 'register.html';
   }
