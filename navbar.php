@@ -1,7 +1,7 @@
 <?php
-  if(isset($_COOKIE[$username]))
+  if(isset($_COOKIE['username']))
   {
-    $usern = $_COOKIE[$username];
+    $usern = $_COOKIE['username'];
     $loggedin = true;
     $putnav='href="logout.php">Logout';
     $putprof='profile.html';
