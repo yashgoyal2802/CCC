@@ -35,7 +35,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link mylink" href="leaderboard.php"
-                    >Leader Board</a
+                    >Leaderboard</a
                   >
                 </li>
                 <li class="nav-item">
