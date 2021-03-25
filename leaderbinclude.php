@@ -42,7 +42,7 @@ echo '<table id="leader"; style="margin-left: auto; margin-right: auto; margin-t
 echo '<tr style="background-color: rgba(255, 255, 255, 0.3);">';
 echo '<th style="padding-left: 2rem;">';
 echo 'Rank</th>';
-echo '<th>Name</th>';
+echo '<th style="text-align:center">Name</th>';
 echo '<th class="score" onclick="sortTable(2)">Codechef</th>';
 echo '<th class="score" onclick="sortTable(3)">Codeforces</th>';
 echo '</tr>';
@@ -51,7 +51,7 @@ if ($result) {
   $ctr = 1;
   while($row = $result->fetch_assoc()) {
     echo '<tr style= "border: 1px solid rgba(255,255,255,0.3); height: 2rem;">';
-    echo '<td style = "font-weight: 500; width: 10px; padding-left:2px;">';
+    echo '<td style = "text-align:center, font-weight: 500; width: 10px; padding-left:50px;">';
     echo "$ctr</td>";
     echo '<td style = "padding-left: 8rem; font-size: 1.1rem; letter-spacing: 0.05rem; text-align:left">';
     echo $row["username"]."</td>";
@@ -127,6 +127,7 @@ function sortTable(n) {
     p.innerHTML=i
   }
 }
+sortTable(2);
 </script>';
 CloseCon($conn);
 ?>
