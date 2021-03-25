@@ -13,7 +13,7 @@
     overflow: hidden;
   }
   #prof:hover{
-    font-size: 8;
+    font-size: 8px;
     max-width:10ch;
   }
 
