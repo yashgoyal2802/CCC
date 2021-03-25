@@ -157,7 +157,7 @@
     background-color: #111;
     color: white;
     font-size: 15px;
-    margin-top: 50%;
+    margin-top: 51%;
     border-width: thin;
     border-style: solid;
     border-color: #262626;
@@ -173,7 +173,7 @@
 
 
 .footer-basic {
-    padding:40px 0;
+    /*padding:40px 0;*/
     background-color:#ffffff;
     color:#4b4c4d;
   }
