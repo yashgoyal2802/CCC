@@ -242,4 +242,5 @@ echo "
 </body>
 </html>
 ";
+CloseCon($conn);
 ?>
