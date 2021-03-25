@@ -73,7 +73,7 @@ if($result){
                       <div class="text-center text-sm-left mb-2 mb-sm-0">
                         <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">
                           <?php
-                            echo "<h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">@". $user ."</h4>";
+                            echo "<h4 class=\"pt-sm-2 pb-1 mb-0 text-nowrap\">@". $user ."</h4>";
                           ?>
                         </h4>
                       </div>
