@@ -4,10 +4,12 @@
     $usern = $_COOKIE[$username];
     $loggedin = true;
     $putnav='href="logout.php">Logout';
+    $putprof='profile.html';
   }
   else{
     $usern = "My Profile";
     $putnav='href="register.html">Login';
+    $putprof= 'register.html';
   }
 
   echo'
@@ -42,7 +44,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mylink" href="#">$usern</a>
+                  <a class="nav-link mylink" href="'.$putprof.'">'.$usern.'</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link mylink"'.$putnav.'</a>
