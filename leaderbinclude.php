@@ -51,7 +51,7 @@ if ($result) {
   $ctr = 1;
   while($row = $result->fetch_assoc()) {
     echo '<tr style= "border: 1px solid rgba(255,255,255,0.3); height: 2rem;">';
-    echo '<td style = "text-align:center, font-weight: 500; width: 10px; padding-left:2px;">';
+    echo '<td style = "text-align:center, font-weight: 500; width: 10px; padding-left:50px;">';
     echo "$ctr</td>";
     echo '<td style = "padding-left: 8rem; font-size: 1.1rem; letter-spacing: 0.05rem; text-align:left">';
     echo $row["username"]."</td>";
