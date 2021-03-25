@@ -236,9 +236,7 @@ echo "
     return true;
   }
 </script>
-</div>
 <?php include('footer.php')?>
-</div>
 </body>
 </html>
 ";
