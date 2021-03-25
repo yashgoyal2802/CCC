@@ -201,9 +201,6 @@ echo '<!DOCTYPE html>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script type="text/javascript">
   </script>
-</body>
-</html>
-
 <script>
   function validateForm(){
 
@@ -230,6 +227,9 @@ echo '<!DOCTYPE html>
     
     return true;
   }
-</script>';
+</script>
+</body>
+</html>
+';
 CloseCon($conn);
 ?>
