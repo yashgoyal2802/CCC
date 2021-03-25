@@ -62,6 +62,9 @@ echo "
     }
   </style>
 </head>
+<header>
+<?php include('navbar.php')?>
+</header>
 <body>
   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'>
   <div class='container'>
@@ -233,6 +236,9 @@ echo "
     return true;
   }
 </script>
+</div>
+<?php include('footer.php')?>
+</div>
 </body>
 </html>
 ";
