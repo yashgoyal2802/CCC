@@ -1,9 +1,7 @@
-<html>
 <?php
-if(isset($_COOKIE[$username]))
+if(isset($_COOKIE['username']))
 {
-	unset($_COOKIE['remember_user']);
+    unset($_COOKIE['username']);
     header('Location: home.html');
 }
 ?>
-</html>
