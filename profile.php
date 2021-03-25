@@ -40,7 +40,7 @@ echo "
   <meta charset='utf-8'>
   <title>Profile</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link href='http://netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='https://netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet'>
   <style type='text/css'>
     body {
       margin-top: 20px;
@@ -191,8 +191,8 @@ echo "
       </div>
     </div>
   </div>
-  <script src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
-  <script src='http://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>
+  <script src='https://code.jquery.com/jquery-1.10.2.min.js'></script>
+  <script src='https://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>
   <script type='text/javascript'>
   </script>
 <script>
