@@ -68,9 +68,9 @@ echo '<!DOCTYPE html>
                     <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
                       <div class="text-center text-sm-left mb-2 mb-sm-0">
                         <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">
-                          <?php
-                            echo "<h4 class=\"pt-sm-2 pb-1 mb-0 text-nowrap\">@". $user ."</h4>";
-                          ?>
+                          
+                            <h4 class=\"pt-sm-2 pb-1 mb-0 text-nowrap\>@ $user</h4>;
+                          
                         </h4>
                       </div>
                     </div>
@@ -148,7 +148,7 @@ echo '<!DOCTYPE html>
                               <div class="col">
                                 <div class="form-group">
                                   <label>Confirm <span class="d-none d-xl-inline">Password</span></label>
-                                  <input class="form-control" type="password" name="ccpwd" value="<?php echo htmlspecialchars($pwd);?>"></div>
+                                  <input class="form-control" type="password" name="ccpwd" value=$pwd></div>
                               </div>
                             </div>
                           </div>
