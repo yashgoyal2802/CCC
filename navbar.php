@@ -4,7 +4,7 @@
     $usern = $_COOKIE['username'];
     $loggedin = true;
     $putnav='href="logout.php">Logout';
-    $putprof='profile.html';
+    $putprof='profile.php';
   }
   else{
     $usern = "Profile";
