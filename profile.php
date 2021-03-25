@@ -62,9 +62,9 @@ echo "
     }
   </style>
 </head>
-<header>
-<?php include('navbar.php')?>
-</header>
+<header>";
+include('navbar.php');
+echo"</header>
 <body>
   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'>
   <div class='container'>
@@ -235,9 +235,9 @@ echo "
     
     return true;
   }
-</script>
-<?php include('footer.php')?>
-</body>
+</script>";
+include('footer.php');
+echo "</body>
 </html>
 ";
 CloseCon($conn);
