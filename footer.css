@@ -109,12 +109,13 @@
     background-color: #2f2f2f;
     float: right;
     margin: 2%;
-    width: 30%;
+    width: 35%;
     margin-right: 10%;
     margin-top: 4%;
     padding: 3%;
     background-size: 100%;
     text-align: center;
+    box-shadow: 0 0 20px #000;
   }
 
   section {
@@ -130,6 +131,7 @@
     letter-spacing: inherit;
     word-spacing: inherit;
     margin-left: 120px;
+    box-shadow: 0 0 20px #000;
   }
 
   section a {
