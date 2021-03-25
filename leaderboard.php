@@ -134,15 +134,7 @@
     <p></p>
     <?php include('leaderbinclude.php')?>
     </div>
-    <footer>
-        <br><br>
-        <img style="float: right; width: 80px; height: 80px; margin-right: 10px;" src="images/ccc.png" class="rotate">
-        <p>You can contact us at 
-            <a href="mailto:cccmpstme@gmail.com">cccmpstme@gmail.com</a> or +91
-            7024003998<br><br></p>
-        <p style="text-shadow: 0 1px"><p style="color: #FE654F">Copyright © 2020 Competitive Coding Club of MPSTME.
-        </p></p>
-    </footer>
+    <?php include('footer.php')?>
     </div>
 </body>
 </html>
