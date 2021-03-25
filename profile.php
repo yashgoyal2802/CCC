@@ -1,5 +1,4 @@
 <?php
-
 $user = $_COOKIE['username'];
 
 function OpenCon()
@@ -34,11 +33,8 @@ if($result){
   $ach = $result['achievements'];
   $pwd = $result['password'];
 }
-?>
-
-<!DOCTYPE html>
+echo '<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <link rel="icon" href="images/ccc.png">
   <meta charset="utf-8">
@@ -217,7 +213,7 @@ if($result){
     var npwd = document.getElementById("npwd").value;
     var email = document.getElementById("email").value;
     var ccpwd = document.getElementById("ccpwd").value;
-    var opwd = '<?php echo $pwd; ?>';
+    var opwd = $pwd;
 
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -226,7 +222,7 @@ if($result){
       return false;
     }
     else if(npwd != ccpwd){
-      alert("Passwords don't match");
+      alert("Passwords don\'t match");
       return false;
     }
     else if(!re.test(String(email).toLowerCase())){
@@ -236,4 +232,5 @@ if($result){
     
     return true;
   }
-</script>
+</script>';
+?>
