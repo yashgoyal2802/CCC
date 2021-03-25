@@ -127,6 +127,7 @@ function sortTable(n) {
     p.innerHTML=i
   }
 }
+sortTable(2);
 </script>';
 CloseCon($conn);
 ?>
