@@ -1,4 +1,15 @@
 <?php
+  if(isset($_COOKIE[$username]))
+  {
+    $usern = $_COOKIE[$username];
+    $loggedin = true;
+    $putnav='href="logout.php">Logout';
+  }
+  else{
+    $usern = "My Profile";
+    $putnav='href="register.html">Login';
+  }
+
   echo'
   <nav class="navbar navbar-light navbar-expand-md navigation-clean mynav">
           <img src="images/ccc.png" alt="logo" width="5%" />
@@ -31,10 +42,10 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mylink" href="#">My profile</a>
+                  <a class="nav-link mylink" href="#">$usern</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mylink" href="#">Logout</a>
+                  <a class="nav-link mylink"'.$putnav.'</a>
                 </li>
               </ul>
             </div>
