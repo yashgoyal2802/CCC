@@ -61,8 +61,8 @@ echo "
 <header style='margin-top: -20px'>";
 include('navbar.php');
 echo"</header>
-<body>
-
+<body style='background-image: linear-gradient(to bottom, #1f1f1f, #212121, #242424, #262626, #292929, #292929, #2a2a2a, #2a2a2a, #292929, #272727, #262626, #252525);
+}'>
   <div class='container'>
     <div class='row flex-lg-nowrap'>
       <div class='col-12 col-lg-auto mb-3' style='width: 200px;'>
