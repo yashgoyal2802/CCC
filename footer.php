@@ -10,7 +10,7 @@
         </div>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="home.php">Home</a></li>
-          <li class="list-inline-item"><a href="contests.html">Calendar</a></li>
+          <li class="list-inline-item"><a href="contests.php">Calendar</a></li>
           <li class="list-inline-item">
             <a href="leaderboard.php">Leader Board</a>
           </li>
