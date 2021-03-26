@@ -192,7 +192,7 @@ echo"</header>
                         </div>
                         <div class='row'>
                           <div class='col d-flex justify-content-end'>
-                            <button class='btn btn-primary' type='submit' onclick='return validateForm()'>Save Changes</button>
+                            <button class='btn btn-primary' type='submit' name='submit' onclick='return validateForm()'>Save Changes</button>
                           </div>
                         </div>
                       </form>
