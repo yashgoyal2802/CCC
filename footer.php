@@ -6,7 +6,7 @@
           <a href="#"><i class="icon ion-social-instagram"></i></a
           ><a href="https://chat.whatsapp.com/JTYNYuHb87MG3fTgy07AlL"><i class="icon ion-social-whatsapp"></i></a
           ><a href="https://github.com/Competitive-Coding-Club"><i class="icon ion-social-github"></i></a
-          ><a href="#"><i class="icon ion-social-facebook"></i></a>
+          ><a href="https://www.linkedin.com/company/competitivecodingclub/"><i class="icon ion-social-linkedin"></i></a>
         </div>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="home.php">Home</a></li>
