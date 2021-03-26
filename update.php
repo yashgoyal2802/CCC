@@ -38,9 +38,9 @@ if(isset($_POST["update"]))
 //         echo $name;
 //         echo $email;
 //         echo $ach;
+        CloseCon($conn);
         header('Location: home.php');
         exit;
     }
-        CloseCon($conn);
 }
 ?>
