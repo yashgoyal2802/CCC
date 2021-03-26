@@ -1,6 +1,7 @@
-/* body{
-    color: white;
-} */
+body{
+    color: black;
+    background-image: linear-gradient(to bottom, #1f1f1f, #212121, #242424, #262626, #292929, #292929, #2a2a2a, #2a2a2a, #292929, #272727, #262626, #252525);
+}
 
 .media{
     background-color: rgb(99, 98, 98);
@@ -15,5 +16,5 @@
 }
 
 .media p{
-    color: white;
+    color: silver;
 }

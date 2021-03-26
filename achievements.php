@@ -3,9 +3,20 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Navigation-Clean.css">
-    <link rel="stylesheet" href="footer.css">    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="Navigation-Clean.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />  
     <style>
 
         .content {
@@ -128,39 +139,13 @@
 <body>
     <div id="page-container">
     <header>
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean mynav">
-            <img src="images/ccc.png" alt="logo" width="5%">
-            <div class="container"><a class="navbar-brand" href="#">Competitive Coding Club</a>
-                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link mylink" href="#">Resources</a></li>
-                        <li class="nav-item"><a class="nav-link mylink" href="contests.html">Calendar</a></li>
-                        <li class="nav-item"><a class="nav-link mylink" href="leaderboard.php">Leader Board</a></li>
-                        <li class="nav-item"><a class="nav-link mylink" href="achievements.php">Achievements</a></li>
-                        <li class="nav-item"><a class="nav-link mylink" href="#">My profile</a></li>
-                        <li class="nav-item"><a class="nav-link mylink" href="#">Logout</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <?php include('navbar.php')?>
     </header>
-    <div id="board">
-    <p></p>
+    <div>
+    <br>
     <?php include('achievementsinclude.php')?>
     </div>
-    <footer>
-        <br><br>
-        <img style="float: right; width: 80px; height: 80px; margin-right: 10px;" src="images/ccc.png" class="rotate">
-        <p>You can contact us at 
-            <a href="mailto:cccmpstme@gmail.com">cccmpstme@gmail.com</a> or +91
-            7024003998<br><br></p>
-        <p style="text-shadow: 0 1px"><p style="color: #FE654F">Copyright © 2020 Competitive Coding Club of MPSTME.
-        </p></p>
-    </footer>
+    <?php include('footer.php')?>
     </div>
 </body>
 </html>

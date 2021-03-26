@@ -84,72 +84,17 @@
             /* right: 20px;  */
             color: #D0CEBA;
         }
-
-        @keyframes rotation {
-            from {
-                transform: rotate(0deg)
-            }
-            to {
-                transform: rotate(360deg)
-            }
-        }
-        .rotate {
-            animation: rotation 8s infinite linear;
-        }
-
-        footer {
-            text-align: left;
-            padding: 3px;
-            /* background-color: #262626; */
-            background-color: #111;
-            color: white;
-            font-size: 15px;
-            margin-top: 0;
-            border-width: thin;
-            border-style: solid;
-            border-color: #262626;
-            border-right-style: hidden;
-        }
-
-        footer a {
-            text-decoration: none;
-            color: #5E7CE2;
-        }
     </style>
     <title>Competitive Coding Club</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean mynav">
-            <img src="images/ccc.png" alt="logo" width="5%">
-            <div class="container"><a class="navbar-brand" href="#">Competitive Coding Club</a>
-                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link mylink" href="#">Resources</a></li>
-                        <li class="nav-item"><a class="nav-link mylink" href="contests.html">Calendar</a></li>
-                        <li class="nav-item"><a class="nav-link mylink" href="leaderboard.php">Leader Board</a></li>
-                        <li class="nav-item"><a class="nav-link mylink" href="achievements.php">Achievements</a></li>
-                        <li class="nav-item"><a class="nav-link mylink" href="#">My profile</a></li>
-                        <li class="nav-item"><a class="nav-link mylink" href="#">Logout</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <?php include('navbar.php')?>
     </header>
     <iframe src="https://calendar.google.com/calendar/embed?src=8a4ko50nq55ma5smhuhdp5rpmaek45lg%40import.calendar.google.com&ctz=Asia%2FKolkata" style="border: 0; margin-top: 6px" width="98%" height="600" frameborder="0" scrolling="no"></iframe>
     <br><br>
     <footer>
-        <br><br>
-        <img style="float: right; width: 80px; height: 80px; margin-right: 10px;" src="images/ccc.png" class="rotate">
-        <p>You can contact us at 
-            <a href="mailto:cccmpstme@gmail.com">cccmpstme@gmail.com</a> or +91
-            7024003998<br><br></p>
-        <p style="text-shadow: 0 1px"><p style="color: #FE654F">Copyright © 2020 Competitive Coding Club of MPSTME.
-        </p></p>
+    <?php include('footer.php')?>
     </footer>
 </body>
 </html>
