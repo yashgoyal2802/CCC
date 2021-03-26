@@ -65,7 +65,7 @@
         }
 
         body {
-            background-image: linear-gradient(black, white);
+            background-image: linear-gradient(black, black);
             margin: 0;
             width: 100%;
             padding: 0;
@@ -79,7 +79,7 @@
     <header>
     <?php include('navbar.php')?>
     </header>
-    <div style="margin-left:10px">
+    <div style="margin: 20px">
     <!--<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=OGE0a281MG5xNTVtYTVzbWh1aGRwNXJwbWFlazQ1bGdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23616161&amp;title=Coding%20Contests" style="border:solid 1px #777" width="98%" height="600" frameborder="0" scrolling="no"></iframe>
     -->
     <link href='https://www.planyo.com/libs/fullcalendar-scheduler/lib/fullcalendar.min.css' rel='stylesheet' /><link href='https://www.planyo.com/libs/fullcalendar-scheduler/scheduler.min.css' rel='stylesheet' /><div id='cpcal_planyonet' class='cp_calendar cp_units_30 ' ></div><a title='Calendar powered by Planyo' alt='Calendar powered by Planyo' href='http://www.planyo.net' target='_blank' class='cp_pb'>calendar </a><div id='cp_fetch_cpcal_planyonet' class='cp_fetching' style='position:absolute;left:200px;top:10px;display:none;z-index:999;'><img src='https://www.planyo.com/images/hourglass.gif' /></div><script>
