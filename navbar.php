@@ -31,7 +31,7 @@
                   <a class="nav-link mylink" href="resources.php">Resources</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mylink" href="contests.html">Calendar</a>
+                  <a class="nav-link mylink" href="contests.php">Calendar</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link mylink" href="leaderboard.php"
