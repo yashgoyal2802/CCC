@@ -27,7 +27,11 @@ function getRating($platform, $user){
 	$response_json = curl_exec($ch);
 	curl_close($ch);
 	$response=json_decode($response_json, true);
-	return $response['rating'];
+	if($response['rating']){
+		return $response['rating'];
+	}
+	else{return "";}
+	
 }
 $sql1 = "SELECT * FROM persons";  
 $result = $conn->query($sql1);
