@@ -17,7 +17,7 @@
           <li class="list-inline-item">
             <a href="achievements.php">Achievements</a>
           </li>
-          <li class="list-inline-item"><a href="#">Resources</a></li>
+          <li class="list-inline-item"><a href="resources.php">Resources</a></li>
         </ul>
         <p class="copyright">Competitive Coding Club © 2021</p>
       </footer>
