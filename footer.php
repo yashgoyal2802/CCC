@@ -3,7 +3,7 @@
       <div class="footer-basic">
       <footer>
         <div class="social">
-          <a href="#"><i class="icon ion-social-instagram"></i></a
+          <a href="#"><ion-icon name="logo-discord"></ion-icon></a
           ><a href="https://chat.whatsapp.com/JTYNYuHb87MG3fTgy07AlL"><i class="icon ion-social-whatsapp"></i></a
           ><a href="https://github.com/Competitive-Coding-Club"><i class="icon ion-social-github"></i></a
           ><a href="https://www.linkedin.com/company/competitivecodingclub/"><i class="icon ion-social-linkedin"></i></a>
