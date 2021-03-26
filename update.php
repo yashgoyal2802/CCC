@@ -8,8 +8,6 @@ if(isset($_POST["update"]))
     $ach = $_POST["ach"];
     $pwd = $_POST["ccpwd"];
 
-
-    
     function OpenCon()
     {
         $dbhost = "sql6.freesqldatabase.com";
