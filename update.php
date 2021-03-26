@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST["submit"]))
+if(isset($_POST["update"]))
 {
     $name = $_POST["username"];
     $email = $_POST["email"];
