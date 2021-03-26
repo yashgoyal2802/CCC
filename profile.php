@@ -70,7 +70,7 @@ echo"</header>
       <div class='col'>
         <div class='row'>
           <div class='col mb-3'>
-            <div class='card'>
+            <div class='card' style='background-image: linear-gradient(rgb(31, 31, 31), rgb(33, 33, 33), rgb(36, 36, 36), rgb(38, 38, 38), rgb(41, 41, 41), rgb(41, 41, 41), rgb(42, 42, 42), rgb(42, 42, 42), rgb(41, 41, 41), rgb(39, 39, 39), rgb(38, 38, 38), rgb(37, 37, 37)); color: white'>
               <div class='card-body'>
                 <div class='e-profile'>
                   <div class='row'>
