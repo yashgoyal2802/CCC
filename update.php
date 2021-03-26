@@ -9,7 +9,6 @@ if(isset($_POST["update"]))
     $pwd = $_POST["ccpwd"];
     
     echo $ccname;
-    header('Location: home.php');
 
     
 //     function OpenCon()
