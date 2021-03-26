@@ -38,7 +38,7 @@ if(isset($_POST["update"]))
 //         echo $name;
 //         echo $email;
 //         echo $ach;
-        header('Location: home.php');
+        header('Location: index.php');
         exit;
     }
     
