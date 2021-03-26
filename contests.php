@@ -80,8 +80,8 @@
     <?php include('navbar.php')?>
     </header>
     <div style="margin-left:10px">
-    /*<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=OGE0a281MG5xNTVtYTVzbWh1aGRwNXJwbWFlazQ1bGdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23616161&amp;title=Coding%20Contests" style="border:solid 1px #777" width="98%" height="600" frameborder="0" scrolling="no"></iframe>
-    */
+    <!--<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=OGE0a281MG5xNTVtYTVzbWh1aGRwNXJwbWFlazQ1bGdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23616161&amp;title=Coding%20Contests" style="border:solid 1px #777" width="98%" height="600" frameborder="0" scrolling="no"></iframe>
+    -->
     <iframe frameborder="0" style="border-width:0;" id="cdr-calendar-iframe" width="900" height="500" src="https://www.chronoflocalendar.com/calendar/embed/4832/9887034098/"></iframe>
     <script type="text/javascript">
     (function() {
