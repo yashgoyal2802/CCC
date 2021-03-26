@@ -4,7 +4,7 @@
       <footer>
         <div class="social">
           <a href="#"><i class="icon ion-social-instagram"></i></a
-          ><a href="#"><i class="icon ion-social-snapchat"></i></a
+          ><a href="https://chat.whatsapp.com/JTYNYuHb87MG3fTgy07AlL"><i class="icon ion-social-whatsapp"></i></a
           ><a href="#"><i class="icon ion-social-twitter"></i></a
           ><a href="#"><i class="icon ion-social-facebook"></i></a>
         </div>
