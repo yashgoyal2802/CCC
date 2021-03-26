@@ -91,7 +91,7 @@
       
     </div>
     <br><br>
-    <footer>
+    <footer style="padding: 40px;">
     <?php include('footer.php')?>
     </footer>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
