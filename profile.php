@@ -82,9 +82,6 @@ echo"</header>
                       </div>
                     </div>
                   </div>
-                  <ul class='nav nav-tabs' style = 'background-color: white;'>
-                    <li class='nav-item'><a href='' class='active nav-link'>Settings</a></li>
-                  </ul>
                   <div class='tab-content pt-3'>
                     <div class='tab-pane active'>
                       <form action='update.php' method='POST'>
