@@ -1,7 +1,6 @@
 <?php
 if(isset($_POST["submit"]))
 {
-    echo "meow";
     $name = $_POST["username"];
     $email = $_POST["email"];
     $ccname = $_POST["ccname"];
@@ -36,7 +35,6 @@ if(isset($_POST["submit"]))
     header('Location: home.php');
 }
 else{
-    echo "moo"; 
     header('Location: home.php');
 }
 ?>
