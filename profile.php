@@ -70,7 +70,7 @@ echo"</header>
       <div class='col'>
         <div class='row'>
           <div class='col mb-3'>
-            <div class='card' style='background-image: linear-gradient(to bottom, #686566, #6b6869, #6e6b6c, #716f70, #747273, #767475, #777678, #79787a, #7a7a7c, #7a7c7e, #7b7e7f, #7d8080);box-shadow: 0 0 25px #000;border-radius: 10px;'>
+            <div class='card' style='background-image: linear-gradient(to bottom, #686566, #6b6869, #6e6b6c, #716f70, #747273, #767475, #777678, #79787a, #7a7a7c, #7a7c7e, #7b7e7f, #7d8080);box-shadow: 0 0 25px #000;border-radius: 10px;background-image: linear-gradient(rgb(31, 31, 31), rgb(33, 33, 33), rgb(36, 36, 36), rgb(38, 38, 38), rgb(41, 41, 41), rgb(41, 41, 41), rgb(42, 42, 42), rgb(42, 42, 42), rgb(41, 41, 41), rgb(39, 39, 39), rgb(38, 38, 38), rgb(37, 37, 37));color: white;box-shadow: 0 0 25px #000;border-radius: 10px;'>
               <div class='card-body'>
                 <div class='e-profile'>
                   <div class='row'>
