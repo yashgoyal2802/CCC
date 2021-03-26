@@ -87,7 +87,7 @@ echo"</header>
                       </div>
                     </div>
                   </div>
-                  <ul class='nav nav-tabs'>
+                  <ul class='nav nav-tabs' style = 'background-color: white;'>
                     <li class='nav-item'><a href='' class='active nav-link'>Settings</a></li>
                   </ul>
                   <div class='tab-content pt-3'>
