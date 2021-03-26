@@ -99,9 +99,15 @@
             scr2.src = "https://www.planyo.com/libs/fullcalendar/locale/en.js"; document.head.appendChild(scr2);};
         scr1.src = "https://www.planyo.com/libs/planyonet-fc.js"; document.head.appendChild(scr1); };
      scr0.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"; document.head.appendChild(scr0);
+    
+    
+    var ele = document.getElementsByClassName('fc-day-grid-event fc-h-event fc-event fc-not-start fc-not-end ev_all ev_resResource_1');
+    for (var i = 0; i < ele.length; i++ ) {
+        ele[i].style.color = "black";
+    }
     </script>
     <link rel='stylesheet' href='https://www.planyo.com/planyonet/planyo.net.css' type='text/css' />
-
+      
     </div>
     <br><br>
     <footer>
