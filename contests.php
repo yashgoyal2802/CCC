@@ -65,7 +65,7 @@
         }
 
         body {
-            background-image: linear-gradient(white, white);
+            background-image: linear-gradient(to top, #7c7c7c, #8b8b8b, #9b9b9b, #ababab, #bbbbbb, #c3c3c3, #cbcbcb, #d3d3d3, #d4d4d4, #d5d6d5, #d7d7d7, #d8d8d8);
             margin: 0;
             width: 100%;
             padding: 0;
