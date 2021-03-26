@@ -29,7 +29,7 @@ if(isset($_POST["update"]))
         echo "<br>";
     }
 
-    $sql = "UPDATE persons SET email='$email', ccname='$ccname', cfname='$cfname', achievements='$ach', password='$pwd' WHERE username='$name'";
+    $sql = "UPDATE persons SET username='$name', email='$email', ccname='$ccname', cfname='$cfname', achievements='$ach', password='$pwd' WHERE username='$name'";
     
     if($conn->query($sql) === true){
 //         echo $ccname;
