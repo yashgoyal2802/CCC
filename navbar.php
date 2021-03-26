@@ -26,7 +26,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navcol-1">
-              <ul class="nav navbar-nav ml-auto">
+              <ul class="nav navbar-nav ml-auto" style="background-color:rgb(17 17 17)>
                 <li class="nav-item">
                   <a class="nav-link mylink" href="resources.php">Resources</a>
                 </li>
