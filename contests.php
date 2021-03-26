@@ -79,7 +79,9 @@
     <header>
     <?php include('navbar.php')?>
     </header>
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=OGE0a281MG5xNTVtYTVzbWh1aGRwNXJwbWFlazQ1bGdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23616161&amp;title=Coding%20Contests" style="border:solid 1px #777" width="98%" height="600" frameborder="0" scrolling="no"></iframe>
+    <div style="margin-left:10px">
+    <iframe style="" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=OGE0a281MG5xNTVtYTVzbWh1aGRwNXJwbWFlazQ1bGdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23616161&amp;title=Coding%20Contests" style="border:solid 1px #777" width="98%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
     <br><br>
     <footer>
     <?php include('footer.php')?>
