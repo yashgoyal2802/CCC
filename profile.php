@@ -82,7 +82,7 @@ echo"</header>
                     </div>
                     <div class='col d-flex flex-column flex-sm-row justify-content-between mb-3'>
                       <div class='text-center text-sm-left mb-2 mb-sm-0'>
-                      	<h4 class='pt-sm-2 pb-1 mb-0 text-nowrap'>$user</h4>
+                      	<h4 class='pt-sm-2 pb-1 mb-0 text-nowrap'>@$user</h4>
                       </div>
                     </div>
                   </div>
