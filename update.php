@@ -1,5 +1,5 @@
 <?php
-header('Location: index.php');
+
 if(isset($_POST["update"]))
 {
     $name = $_POST["username"];
@@ -39,7 +39,7 @@ if(isset($_POST["update"]))
 //         echo $name;
 //         echo $email;
 //         echo $ach;
-//         header('Location: index.php');
+        header('Location: index.php');
         exit;
     }
     
