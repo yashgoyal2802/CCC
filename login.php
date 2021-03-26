@@ -38,6 +38,7 @@ if($result->num_rows>0){
 }else{
     $error = "Your Login Name or Password is invalid";
     echo "$error";
+    CloseCon($conn);
 }
 
 ?>
