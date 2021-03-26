@@ -3,9 +3,21 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Navigation-Clean.css">
-    <link rel="stylesheet" href="footer.css">
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="Navigation-Clean.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />  
     <style>
 
         .content {
@@ -53,37 +65,13 @@
         }
 
         body {
-            /* background-image: linear-gradient(blue, pink); */
-            background-color: white;
+            background-image: linear-gradient(black, white);
             margin: 0;
             width: 100%;
             padding: 0;
             background-repeat: no-repeat;
         }
 
-        img {
-            border-radius: 20px;
-        }
-
-        .bg-image {
-            background-image: url("images/ccc.jpg");
-            background-color: #F4F1DE;
-            position: relative;
-            margin: 0 auto;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 60%;
-            height: 500px;
-        }
-
-        .bg-text {
-            text-align: center;
-            position: absolute;
-            bottom: 0px;
-            left: 310px;
-            /* right: 20px;  */
-            color: #D0CEBA;
-        }
     </style>
     <title>Competitive Coding Club</title>
 </head>
@@ -91,7 +79,7 @@
     <header>
     <?php include('navbar.php')?>
     </header>
-    <iframe src="https://calendar.google.com/calendar/embed?src=8a4ko50nq55ma5smhuhdp5rpmaek45lg%40import.calendar.google.com&ctz=Asia%2FKolkata" style="border: 0; margin-top: 6px" width="98%" height="600" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=OGE0a281MG5xNTVtYTVzbWh1aGRwNXJwbWFlazQ1bGdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23616161&amp;title=Coding%20Contests" style="border:solid 1px #777" width="98%" height="600" frameborder="0" scrolling="no"></iframe>
     <br><br>
     <footer>
     <?php include('footer.php')?>
