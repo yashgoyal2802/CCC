@@ -99,7 +99,7 @@ echo"</header>
                               <div class='col'>
                                 <div class='form-group'>
                                   <label>Username</label>
-                                  <input class='form-control' type='text' name='usernname' value=$user readonly>
+                                  <input class='form-control' type='text' name='username' value=$user readonly>
                                 </div>
                               </div>
                             </div>
