@@ -8,7 +8,7 @@ if(isset($_POST["update"]))
     $ach = $_POST["ach"];
     $pwd = $_POST["ccpwd"];
     
-    echo $ccname;
+    echo $ccname . $cfname . $pwd . $name . $email . $ach;
 
     
 //     function OpenCon()
