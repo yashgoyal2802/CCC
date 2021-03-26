@@ -9,7 +9,7 @@
           ><a href="#"><i class="icon ion-social-facebook"></i></a>
         </div>
         <ul class="list-inline">
-          <li class="list-inline-item"><a href="home.html">Home</a></li>
+          <li class="list-inline-item"><a href="home.php">Home</a></li>
           <li class="list-inline-item"><a href="contests.html">Calendar</a></li>
           <li class="list-inline-item">
             <a href="leaderboard.php">Leader Board</a>
