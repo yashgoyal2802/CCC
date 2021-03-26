@@ -86,7 +86,7 @@
           </p>
         </article>
       </section>
-      <aside class="animate__animated animate__slideInRight animate__delay-1s" style="padding-bottom: 11.5px;">
+      <aside class="animate__animated animate__slideInRight animate__delay-1s" style="padding-bottom: 13.5px;">
         <h3
           style="
             color: white;
