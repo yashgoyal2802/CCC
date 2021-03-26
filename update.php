@@ -32,9 +32,9 @@ if(isset($_POST["submit"]))
     $sql = "UPDATE persons SET email='$email', ccname='$ccname', cfname='$cfname', achievements='$ach', password='$pwd' WHERE username='$name'";
     $result = $conn->query($sql);
     CloseCon($conn);
-    header('Location: home.php');
+    header('Location: leaderboard.php');
 }
 else{
-    header('Location: leaderboard.php');
+    header('Location: home.php');
 }
 ?>
