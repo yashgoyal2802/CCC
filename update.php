@@ -32,13 +32,13 @@ if(isset($_POST["update"]))
     $sql = "UPDATE persons SET username='$name', email='$email', ccname='$ccname', cfname='$cfname', achievements='$ach', password='$pwd' WHERE username='$name'";
     
     if($conn->query($sql) === true){
-        echo $ccname;
-        echo $cfname;
-        echo $pwd;
-        echo $name;
-        echo $email;
-        echo $ach;
-//         header('Location: home.php');
+//         echo $ccname;
+//         echo $cfname;
+//         echo $pwd;
+//         echo $name;
+//         echo $email;
+//         echo $ach;
+        header('Location: home.php');
 //         exit;
     }
         CloseCon($conn);
