@@ -28,10 +28,8 @@ function getRating($platform, $user){
 	curl_close($ch);
 	$response=json_decode($response_json, true);
 	if(isset($response['status'])){
-		if($response['status']==='Success'){
-			return $response['rating'];}
-		else{return "";}
-	else{return "";}
+		if($response['status']==='Success'){return $response['rating'];}
+	return "";
 	
 }
 $sql1 = "SELECT * FROM persons";  
