@@ -63,14 +63,14 @@ include('navbar.php');
 echo"</header>
 <body style='background-image: linear-gradient(to bottom, #1f1f1f, #212121, #242424, #262626, #292929, #292929, #2a2a2a, #2a2a2a, #292929, #272727, #262626, #252525);
 }'>
-  <div class='container'>
+  <div class='container' style='margin-top: 20px;'>
     <div class='row flex-lg-nowrap'>
       <div class='col-12 col-lg-auto mb-3' style='width: 200px;'>
       </div>
       <div class='col'>
         <div class='row'>
           <div class='col mb-3'>
-            <div class='card' style='background-image: linear-gradient(rgb(31, 31, 31), rgb(33, 33, 33), rgb(36, 36, 36), rgb(38, 38, 38), rgb(41, 41, 41), rgb(41, 41, 41), rgb(42, 42, 42), rgb(42, 42, 42), rgb(41, 41, 41), rgb(39, 39, 39), rgb(38, 38, 38), rgb(37, 37, 37)); color: white'>
+            <div class='card' style='background-image: linear-gradient(to bottom, #686566, #6b6869, #6e6b6c, #716f70, #747273, #767475, #777678, #79787a, #7a7a7c, #7a7c7e, #7b7e7f, #7d8080);box-shadow: 0 0 25px #000;border-radius: 10px;'>
               <div class='card-body'>
                 <div class='e-profile'>
                   <div class='row'>

@@ -86,7 +86,7 @@
           </p>
         </article>
       </section>
-      <aside class="animate__animated animate__slideInRight animate__delay-1s">
+      <aside class="animate__animated animate__slideInRight animate__delay-1s" style="padding-bottom: 13.5px;">
         <h3
           style="
             color: white;
@@ -115,5 +115,6 @@
     </div>
     <br />
     <?php include('footer.php')?>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>
 </html>
