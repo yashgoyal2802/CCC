@@ -131,7 +131,7 @@ echo"</header>
                               <div class='col mb-3'>
                                 <div class='form-group'>
                                   <label>Achievements</label>
-                                  <textarea class='form-control' rows='5' name='ach'>$ach</textarea>
+                                  <input class='form-control' type='text' name='ach' value=$ach>
                                 </div>
                               </div>
                             </div>
