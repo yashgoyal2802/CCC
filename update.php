@@ -30,11 +30,11 @@ if(isset($_POST["submit"]))
     }
 
     $sql = "UPDATE persons SET email='$email', ccname='$ccname', cfname='$cfname', achievements='$ach', password='$pwd' WHERE username='$name'";
-    $result = $conn->query($sql);
-    CloseCon($conn);
-    header('Location: home.php');
-}
-else{
-    header('Location: leaderboard.php');
+    
+    if($conn->query($sql) === true){
+        header('Location: home.php');
+        exit;
+    }
+        CloseCon($conn);
 }
 ?>
