@@ -29,9 +29,9 @@ if(isset($_POST["update"]))
         die("ERROR: Could not connect." . $conn->connect_error);
         echo "<br>";
     }
-
-    $sql = "UPDATE persons SET email='$email', ccname='$ccname', cfname='$cfname', achievements='$ach', password='$pwd' WHERE username='$name'";
     
+    $sql = "UPDATE persons SET email='$email', ccname='$ccname', cfname='$cfname', achievements='$ach', password='$pwd' WHERE username='$name'";
+    error_log($sql);
     if($conn->query($sql) === true){
 //         echo $ccname;
 //         echo $cfname;
