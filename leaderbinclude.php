@@ -27,9 +27,10 @@ function getRating($platform, $user){
 	$response_json = curl_exec($ch);
 	curl_close($ch);
 	$response=json_decode($response_json, true);
-	if($response['status']==='Success'){
-		return $response['rating'];
-	}
+	if(isset($response['status'])){
+		if($response['status']==='Success'){
+			return $response['rating'];}
+		else{return "";}
 	else{return "";}
 	
 }
