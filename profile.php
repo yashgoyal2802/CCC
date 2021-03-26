@@ -54,7 +54,7 @@ echo "
   />
   <title>Profile</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link href='https://netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet'>
+//   <link href='https://netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet'>
   <style type='text/css'>
     body {
       margin-top: 20px;
@@ -66,7 +66,7 @@ echo "
 include('navbar.php');
 echo"</header>
 <body>
-  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'>
+//   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'>
   <div class='container'>
     <div class='row flex-lg-nowrap'>
       <div class='col-12 col-lg-auto mb-3' style='width: 200px;'>
