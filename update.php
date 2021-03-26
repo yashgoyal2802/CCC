@@ -35,6 +35,6 @@ if(isset($_POST["submit"]))
     header('Location: home.php');
 }
 else{
-    header('Location: home.php');
+    header('Location: leaderboard.php');
 }
 ?>
