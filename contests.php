@@ -65,7 +65,7 @@
         }
 
         body {
-            background-image: linear-gradient(to top, #7c7c7c, #8b8b8b, #9b9b9b, #ababab, #bbbbbb, #c3c3c3, #cbcbcb, #d3d3d3, #d4d4d4, #d5d6d5, #d7d7d7, #d8d8d8);
+            background-image: linear-gradient(to top, #434343, #535353, #646464, #767676, #888888, #959595, #a2a2a2, #b0b0b0, #bbbbbb, #c7c7c7, #d2d2d2, #dedede);
             margin: 0;
             width: 100%;
             padding: 0;
