@@ -3,10 +3,10 @@
       <div class="footer-basic">
       <footer>
         <div class="social">
-          <a href="#"><i class="icon ion-social-instagram"></i></a
-          ><a href="https://chat.whatsapp.com/JTYNYuHb87MG3fTgy07AlL"><i class="icon ion-social-whatsapp"></i></a
-          ><a href="https://github.com/Competitive-Coding-Club"><i class="icon ion-social-github"></i></a
-          ><a href="https://www.linkedin.com/company/competitivecodingclub/"><i class="icon ion-social-linkedin"></i></a>
+          <a href="https://discord.gg/qNccSFp" target="_blank" style="line-height: 41px;font-size: 22px;"><ion-icon name="logo-discord"></ion-icon></a
+          ><a href="https://chat.whatsapp.com/JTYNYuHb87MG3fTgy07AlL" target="_blank" ><i class="icon ion-social-whatsapp"></i></a
+          ><a href="https://github.com/Competitive-Coding-Club" target="_blank" ><i class="icon ion-social-github"></i></a
+          ><a href="https://www.linkedin.com/company/competitivecodingclub/" target="_blank" ><i class="icon ion-social-linkedin"></i></a>
         </div>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="home.php">Home</a></li>
