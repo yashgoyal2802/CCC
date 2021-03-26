@@ -33,6 +33,7 @@ if($result->num_rows>0){
 	$cookie_name = "username"; 
 	$cookie_value = $username;
 	setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+	CloseCon($conn);
 	header('Location: home.php');
 }else{
     $error = "Your Login Name or Password is invalid";
