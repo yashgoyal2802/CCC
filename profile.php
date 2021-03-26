@@ -63,7 +63,7 @@ echo "
     }
   </style>
 </head>
-<header>";
+<header style='margin-top: -20px'>";
 include('navbar.php');
 echo"</header>
 <body>
