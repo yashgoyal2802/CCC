@@ -29,7 +29,7 @@ if(isset($_POST["submit"]))
         echo "<br>";
     }
 
-    $sql = "UPDATE persons SET username='$user', email='$email', ccname='$ccname', cfname='$cfname', achievements='$ach', password='$pwd' WHERE username='$name'";
+    $sql = "UPDATE persons SET username='$name', email='$email', ccname='$ccname', cfname='$cfname', achievements='$ach', password='$pwd' WHERE username='$name'";
     
     if($conn->query($sql) === true){
         header('Location: home.php');
