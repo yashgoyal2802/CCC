@@ -156,32 +156,6 @@ echo"</header>
                               </div>
                             </div>
                           </div>
-                          <!-- <div class='col-12 col-sm-5 offset-sm-1 mb-3'>
-                            <div class='mb-2'><b>Keeping in Touch</b></div>
-                            <div class='row'>
-                              <div class='col'>
-                                <label>Email Notifications</label>
-                                <div class='custom-controls-stacked px-2'>
-                                  <div class='custom-control custom-checkbox'>
-                                    <input type='checkbox' class='custom-control-input' id='notifications-blog'
-                                      checked=''>
-                                    <label class='custom-control-label' for='notifications-blog'>Blog posts</label>
-                                  </div>
-                                  <div class='custom-control custom-checkbox'>
-                                    <input type='checkbox' class='custom-control-input' id='notifications-news'
-                                      checked=''>
-                                    <label class='custom-control-label' for='notifications-news'>Newsletter</label>
-                                  </div>
-                                  <div class='custom-control custom-checkbox'>
-                                    <input type='checkbox' class='custom-control-input' id='notifications-offers'
-                                      checked=''>
-                                    <label class='custom-control-label' for='notifications-offers'>Personal
-                                      Offers</label>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div> -->
                         </div>
                         <div class='row'>
                           <div class='col d-flex justify-content-end'>
