@@ -76,63 +76,11 @@
             border-radius:20px;
         }
 
-        .bg-image {
-            background-image: url("images/ccc_title.jpg");
-            background-color: #F4F1DE;
-            position: relative;
-            margin: 0 auto;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 60%;
-            height: 500px;
-        }
-
-        .bg-text {
-            text-align: center;
-            position: absolute;
-            bottom: 0px;
-            left: 310px;
-            /* right: 20px;  */
-            color: #D0CEBA;
-        }
-
-        @keyframes rotation {
-            from {
-                transform: rotate(0deg)
-            }
-            to {
-                transform: rotate(360deg)
-            }
-        }
-        .rotate {
-            animation: rotation 8s infinite linear;
-        }
-
         #page-container {
           position: relative;
           min-height: 100vh;
         }
 
-        footer {
-            text-align: left;
-            padding: 3px;
-            /* background-color: #262626; */
-            background-color: #111;
-            color: white;
-            font-size: 15px;
-            border-width: thin;
-            border-style: solid;
-            border-color: #262626;
-            border-right-style: hidden;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer a {
-            text-decoration: none;
-            color: #5E7CE2;
-        }
     </style>
     <title>Competitive Coding Club</title>
 </head>
