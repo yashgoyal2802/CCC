@@ -56,6 +56,28 @@ echo "
       margin-top: 20px;
       background: #f8f8f8
     }
+    .form-group {
+      position: relative;
+      width: 100%;
+      margin: 1rem 0;
+    }
+
+    .form-group i {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      font-size: 1.4rem;
+      color: var(--gray-2);
+    }
+
+    .form-group input {
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      border: 0.125rem solid var(--white);
+      outline: none;
+    }
   </style>
 </head>
 <header style='margin-top: -20px'>";
@@ -136,7 +158,8 @@ echo"</header>
                               <div class='col'>
                                 <div class='form-group'>
                                   <label>Current Password</label>
-                                  <input class='form-control' type='password' name='cpwd' value=$pwd>
+                                  <input class='form-control' type='password' name='cpwd' id='pass' value=$pwd>
+				  <i class='icon ion-eye' id='togglePassword' style='margin-left: 255px; margin-top: 15px; color: gray; cursor: pointer'></i>
                                 </div>
                               </div>
                             </div>
@@ -144,7 +167,8 @@ echo"</header>
                               <div class='col'>
                                 <div class='form-group'>
                                   <label>New Password</label>
-                                  <input class='form-control' type='password' name='npwd' value=$pwd>
+                                  <input class='form-control' type='password' name='npwd' id='pass1' value=$pwd>
+				  <i class='icon ion-eye' id='togglePassword1' style='margin-left: 255px; margin-top: 15px; color: gray; cursor: pointer'></i>
                                 </div>
                               </div>
                             </div>
@@ -152,36 +176,12 @@ echo"</header>
                               <div class='col'>
                                 <div class='form-group'>
                                   <label>Confirm <span class='d-none d-xl-inline'>Password</span></label>
-                                  <input class='form-control' type='password' name='ccpwd' value=$pwd></div>
+                                  <input class='form-control' type='password' name='ccpwd' id='pass2' value=$pwd>
+				  <i class='icon ion-eye' id='togglePassword2' style='margin-left: 255px; margin-top: 15px; color: gray; cursor: pointer'></i>
+				 </div>
                               </div>
                             </div>
                           </div>
-                          <!-- <div class='col-12 col-sm-5 offset-sm-1 mb-3'>
-                            <div class='mb-2'><b>Keeping in Touch</b></div>
-                            <div class='row'>
-                              <div class='col'>
-                                <label>Email Notifications</label>
-                                <div class='custom-controls-stacked px-2'>
-                                  <div class='custom-control custom-checkbox'>
-                                    <input type='checkbox' class='custom-control-input' id='notifications-blog'
-                                      checked=''>
-                                    <label class='custom-control-label' for='notifications-blog'>Blog posts</label>
-                                  </div>
-                                  <div class='custom-control custom-checkbox'>
-                                    <input type='checkbox' class='custom-control-input' id='notifications-news'
-                                      checked=''>
-                                    <label class='custom-control-label' for='notifications-news'>Newsletter</label>
-                                  </div>
-                                  <div class='custom-control custom-checkbox'>
-                                    <input type='checkbox' class='custom-control-input' id='notifications-offers'
-                                      checked=''>
-                                    <label class='custom-control-label' for='notifications-offers'>Personal
-                                      Offers</label>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div> -->
                         </div>
                         <div class='row'>
                           <div class='col d-flex justify-content-end'>
@@ -206,6 +206,30 @@ echo"</header>
   <script type='text/javascript'>
   </script>
 <script>
+  const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#pass');
+  togglePassword.addEventListener('click', function (e) {
+     const type =
+        password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.classList.toggle('ion-eye-disabled');
+  });
+  const togglePassword1 = document.querySelector('#togglePassword1');
+  const password1 = document.querySelector('#pass1');
+  togglePassword1.addEventListener('click', function (e) {
+     const type =
+        password1.getAttribute('type') === 'password' ? 'text' : 'password';
+        password1.setAttribute('type', type);
+        this.classList.toggle('ion-eye-disabled');
+  });
+  const togglePassword2 = document.querySelector('#togglePassword2');
+  const password2 = document.querySelector('#pass2');
+  togglePassword2.addEventListener('click', function (e) {
+     const type =
+        password2.getAttribute('type') === 'password' ? 'text' : 'password';
+        password2.setAttribute('type', type);
+        this.classList.toggle('ion-eye-disabled');
+  });
   function validateForm(){
     var cpwd = document.getElementById('cpwd').value; 
     var npwd = document.getElementById('npwd').value;
