@@ -158,7 +158,7 @@ echo"</header>
                               <div class='col'>
                                 <div class='form-group'>
                                   <label>Current Password</label>
-                                  <input class='form-control' type='password' name='cpwd' value=$pwd>
+                                  <input class='form-control' type='password' name='cpwd' id='pass' value=$pwd>
 				  <i class='icon ion-eye' id='togglePassword' style='margin-left: 255px; margin-top: 15px; color: gray; cursor: pointer'></i>
                                 </div>
                               </div>
@@ -167,7 +167,7 @@ echo"</header>
                               <div class='col'>
                                 <div class='form-group'>
                                   <label>New Password</label>
-                                  <input class='form-control' type='password' name='npwd' value=$pwd>
+                                  <input class='form-control' type='password' name='npwd' id='pass1' value=$pwd>
 				  <i class='icon ion-eye' id='togglePassword1' style='margin-left: 255px; margin-top: 15px; color: gray; cursor: pointer'></i>
                                 </div>
                               </div>
@@ -176,7 +176,7 @@ echo"</header>
                               <div class='col'>
                                 <div class='form-group'>
                                   <label>Confirm <span class='d-none d-xl-inline'>Password</span></label>
-                                  <input class='form-control' type='password' name='ccpwd' value=$pwd>
+                                  <input class='form-control' type='password' name='ccpwd' id='pass2' value=$pwd>
 				  <i class='icon ion-eye' id='togglePassword2' style='margin-left: 255px; margin-top: 15px; color: gray; cursor: pointer'></i>
 				 </div>
                               </div>
@@ -206,6 +206,14 @@ echo"</header>
   <script type='text/javascript'>
   </script>
 <script>
+  const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#pass');
+  togglePassword.addEventListener('click', function (e) {
+     const type =
+        password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.classList.toggle('ion-eye-disabled');
+  });
   function validateForm(){
     var cpwd = document.getElementById('cpwd').value; 
     var npwd = document.getElementById('npwd').value;
