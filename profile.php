@@ -214,6 +214,22 @@ echo"</header>
         password.setAttribute('type', type);
         this.classList.toggle('ion-eye-disabled');
   });
+  const togglePassword1 = document.querySelector('#togglePassword1');
+  const password1 = document.querySelector('#pass1');
+  togglePassword1.addEventListener('click', function (e) {
+     const type =
+        password1.getAttribute('type') === 'password' ? 'text' : 'password';
+        password1.setAttribute('type', type);
+        this.classList.toggle('ion-eye-disabled');
+  });
+  const togglePassword2 = document.querySelector('#togglePassword2');
+  const password2 = document.querySelector('#pass2');
+  togglePassword2.addEventListener('click', function (e) {
+     const type =
+        password2.getAttribute('type') === 'password' ? 'text' : 'password';
+        password2.setAttribute('type', type);
+        this.classList.toggle('ion-eye-disabled');
+  });
   function validateForm(){
     var cpwd = document.getElementById('cpwd').value; 
     var npwd = document.getElementById('npwd').value;
