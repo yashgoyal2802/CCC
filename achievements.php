@@ -79,7 +79,7 @@
         }
 
     </style>
-    <title>Competitive Coding Club</title>
+    <title>Achievements | CCC</title>
 </head>
 <body>
     <div id="page-container">
