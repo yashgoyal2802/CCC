@@ -16,10 +16,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
-    <!-- <style>
-      
-    </style> -->
     <title>Competitive Coding Club</title>
   </head>
 
@@ -27,19 +23,6 @@
     <div id="headerdiv">
       <header>
         <?php include('navbar.php')?>
-
-        <!-- <ul>
-              <li style="float:left"><a href="home.html"><img src="images/ccc.png" alt="CCC"
-                          width="20px" height="20px"></a></li>
-              <li><a href="register.html">Register</a></li>
-              <li><a href="contests.html">Contests</a></li>
-              <li><a href="leaderboard.php">Leaderboard</a></li>
-          </ul> -->
-
-        <!-- <br><br>
-          <div class="title">Competitive <span style="color: #E94F37;">Coding</span><br>Club</div>
-          <br><br> -->
-
         <div class="bg-image">
           <div class="bg-text animate__animated animate__slideInUp">
             Welcome To Our Club

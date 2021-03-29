@@ -48,7 +48,7 @@ echo "
   />
   <link rel='stylesheet' href='Navigation-Clean.css' />
   <link rel='stylesheet' href='footer.css' />
-  <title>Profile</title>
+  <title>Profile | CCC</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
  
   <style type='text/css'>
