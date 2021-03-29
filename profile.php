@@ -56,6 +56,30 @@ echo "
       margin-top: 20px;
       background: #f8f8f8
     }
+    .form-group {
+      position: relative;
+      width: 100%;
+      margin: 1rem 0;
+    }
+
+    .form-group i {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      font-size: 1.4rem;
+      color: var(--gray-2);
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 1rem 3rem;
+      font-size: 1rem;
+      background-color: var(--gray);
+      border-radius: 0.5rem;
+      border: 0.125rem solid var(--white);
+      outline: none;
+    }
   </style>
 </head>
 <header style='margin-top: -20px'>";
