@@ -10,6 +10,7 @@
         </div>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="home.php">Home</a></li>
+          <li class="list-inline-item"><a href="resources.php">Resources</a></li>
           <li class="list-inline-item"><a href="contests.php">Calendar</a></li>
           <li class="list-inline-item">
             <a href="leaderboard.php">Leader Board</a>
@@ -17,7 +18,6 @@
           <li class="list-inline-item">
             <a href="achievements.php">Achievements</a>
           </li>
-          <li class="list-inline-item"><a href="resources.php">Resources</a></li>
         </ul>
         <p class="copyright">Competitive Coding Club © 2021</p>
       </footer>
