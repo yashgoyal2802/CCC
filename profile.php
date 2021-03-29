@@ -159,7 +159,7 @@ echo"</header>
                                 <div class='form-group'>
                                   <label>Current Password</label>
                                   <input class='form-control' type='password' name='cpwd' value=$pwd>
-				  <i class='icon ion-eye' id='togglePassword' style='margin-left: 255px; margin-top: 15px; cursor: pointer'></i>
+				  <i class='icon ion-eye' id='togglePassword' style='margin-left: 255px; margin-top: 15px; color: 'gray'; cursor: pointer'></i>
                                 </div>
                               </div>
                             </div>
@@ -168,7 +168,7 @@ echo"</header>
                                 <div class='form-group'>
                                   <label>New Password</label>
                                   <input class='form-control' type='password' name='npwd' value=$pwd>
-				  <i class='icon ion-eye' id='togglePassword1' style='margin-left: 255px; margin-top: 15px; cursor: pointer'></i>
+				  <i class='icon ion-eye' id='togglePassword1' style='margin-left: 255px; margin-top: 15px; color: 'gray'; cursor: pointer'></i>
                                 </div>
                               </div>
                             </div>
@@ -176,8 +176,9 @@ echo"</header>
                               <div class='col'>
                                 <div class='form-group'>
                                   <label>Confirm <span class='d-none d-xl-inline'>Password</span></label>
-                                  <input class='form-control' type='password' name='ccpwd' value=$pwd></div>
-				  <i class='icon ion-eye' id='togglePassword2' style='margin-left: 255px; margin-top: 15px; cursor: pointer'></i>
+                                  <input class='form-control' type='password' name='ccpwd' value=$pwd>
+				  <i class='icon ion-eye' id='togglePassword2' style='margin-left: 255px; margin-top: 15px; color: 'gray'; cursor: pointer'></i>
+				 </div>
                               </div>
                             </div>
                           </div>
