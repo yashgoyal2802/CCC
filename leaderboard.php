@@ -48,7 +48,7 @@
         }
 
     </style>
-    <title>Competitive Coding Club</title>
+    <title>Leader Board | CCC</title>
 </head>
 <body>
     <div id="page-container">
