@@ -6,6 +6,10 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <!-- <link rel="stylesheet" href="styles.css" /> -->
     <style>
       :root {
@@ -402,6 +406,11 @@
                   placeholder="Password"
                   onkeypress="return event.charCode != 32"
                 />
+                <i
+                  class="icon ion-eye"
+                  id="togglePassword"
+                  style="margin-left: 360px; margin-top: 1px; cursor: pointer"
+                ></i>
               </div>
               <!-- <button>Sign up</button> -->
               <input
@@ -411,6 +420,7 @@
                 value="Sign Up"
                 onclick="return validateForm()"
               />
+
               <p>
                 <span>Already have an account?</span>
                 <b id="sign-in">Sign in here</b>
@@ -466,6 +476,11 @@
                   placeholder="Password"
                   onkeypress="return event.charCode != 32"
                 />
+                <i
+                  class="icon ion-eye"
+                  id="togglePassword1"
+                  style="margin-left: 360px; margin-top: 1px; cursor: pointer"
+                ></i>
               </div>
               <!-- <button>Sign in</button> -->
               <input
@@ -540,6 +555,27 @@
     <!-- End Container -->
 
     <script>
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#password");
+      togglePassword.addEventListener("click", function (e) {
+        // toggle the type attribute
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        // toggle the eye slash icon
+        this.classList.toggle("ion-eye-disabled");
+      });
+      const togglePassword1 = document.querySelector("#togglePassword1");
+      const password1 = document.querySelector("#password1");
+      togglePassword1.addEventListener("click", function (e) {
+        // toggle the type attribute
+        const type =
+          password1.getAttribute("type") === "password" ? "text" : "password";
+        password1.setAttribute("type", type);
+        // toggle the eye slash icon
+        this.classList.toggle("ion-eye-disabled");
+      });
+
       const container = document.getElementById("container");
       const signIn = document.getElementById("sign-in");
       const signUp = document.getElementById("sign-up");
@@ -562,8 +598,7 @@
         if (uname == null || uname == "") {
           alert("Error: Username cannot be blank");
           return false;
-        }
-        else if(pw1 == null || pw1 == ""){
+        } else if (pw1 == null || pw1 == "") {
           alert("Error: Password cannot be blank");
           return false;
         }
@@ -582,7 +617,7 @@
         if (uname == null || uname == "") {
           alert("Error: Username cannot be blank");
           return false;
-        }else if( pw == null || pw == ""){
+        } else if (pw == null || pw == "") {
           alert("Error: Password cannot be blank");
           return false;
         } else if (ccname == null || ccname == "") {
