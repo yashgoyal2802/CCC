@@ -54,10 +54,7 @@
 
         header {
             text-align: center;
-            /* background-color: #F7F7FF; */
-            /* background-color: #F0EFEB; */
             background-color: #F4F1DE;
-            /* background-image: linear-gradient(blue, pink); */
             width: 100%;
             margin: 0;
             padding: 0;
@@ -82,7 +79,7 @@
         }
 
     </style>
-    <title>Competitive Coding Club</title>
+    <title>Achievements | CCC</title>
 </head>
 <body>
     <div id="page-container">

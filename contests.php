@@ -73,7 +73,7 @@
         }
 
     </style>
-    <title>Competitive Coding Club</title>
+    <title>Contests | CCC</title>
 </head>
 <body>
     <header>
